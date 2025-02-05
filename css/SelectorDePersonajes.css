@@ -182,12 +182,69 @@ h1{
 
 }
 
+/*formulario */
+
+#formulario {
+    width: 400px;
+    background-color: #624185;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+}
+
+#formulario h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: "Orbitron";
+}
+
+#formulario h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: "Orbitron";
+}
+
+#formulario .controls{
+    width: 100%;
+    background: #d9adeb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #170F1F;
+    font-size: 20px;
+    color: white;
+}
+
+#formulario p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#formulario .botons {
+    width: 100%;
+    background: #170F1F;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+#formulario .botons:hover {
+    color:#5B3088;
+    background-color: #d9adeb;
+}
+
 /*MEDIA QUERY*/
 /* Tablet */
 @media screen and (max-width: 1030px){
     /* MAIN */
 
     /* Footer */
+
  
 }
 
@@ -242,6 +299,17 @@ h1{
 
     
     /* Footer */
+
+    #formulario {
+        width: 90%; 
+        padding: 15px; 
+        margin-top: 30px; 
+    }
+
+    #formulario .controls,
+    #formulario .botons {
+        font-size: 16px; 
+    }
 
     
 }
