@@ -246,6 +246,49 @@ footer {
     text-align: center; /* Opcional: centra el contenido */
 }
 
+#footer {
+    background-color: #9c6ab5; /* Morado claro */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-family: Orbitron, sans-serif;
+}
+
+#footer h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Pequeño efecto de zoom */
+}
+
 /*MEDIA QUERY*/
 /* Tablet */
 @media screen and (max-width: 1030px){
