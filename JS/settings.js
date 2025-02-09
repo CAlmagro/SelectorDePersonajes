@@ -11,21 +11,23 @@ document.addEventListener('DOMContentLoaded', function () {
         settingsMenu.style.display = (settingsMenu.style.display === 'block') ? 'none' : 'block';
     });
 
-    // Ajustar volumen del audio
+    // Ajustar volumen del audio con el slider
     volumeSlider.addEventListener('input', function () {
+        audio.muted = false; // Desmutear si el usuario mueve el slider
         audio.volume = volumeSlider.value;
-        audio.muted = (audio.volume === 0); // Mutear si el volumen es 0
-        muteCheckbox.checked = audio.muted;
+        muteCheckbox.checked = (audio.volume === 0); // Si volumen es 0, activar mute
     });
 
     // Mute/unmute del audio
     muteCheckbox.addEventListener('change', function () {
         if (muteCheckbox.checked) {
-            audio.muted = true; // Mutear correctamente en todos los navegadores
+            audio.muted = true;
+            volumeSlider.value = 0;
         } else {
             audio.muted = false;
+            audio.volume = 0.5; // Valor por defecto al desmutear
+            volumeSlider.value = 0.5;
         }
-        volumeSlider.value = audio.muted ? 0 : audio.volume; // Mantener sincronización con el slider
     });
 
     // Cambiar entre modo oscuro y claro
@@ -40,7 +42,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Ajustar valores iniciales
+    // Ajustar valores iniciales (importante para Safari y otros navegadores)
     volumeSlider.value = audio.muted ? 0 : audio.volume;
     muteCheckbox.checked = audio.muted;
+
+    // Intentar permitir cambios en volumen después de la primera interacción
+    document.body.addEventListener('click', function () {
+        audio.muted = false; // Asegurar que no esté muteado
+        volumeSlider.value = audio.volume; // Sincronizar slider
+    }, { once: true });
 });
