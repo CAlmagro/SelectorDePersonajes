@@ -24,10 +24,19 @@
                     <li><a>AJUSTES</a></li>
                 </ul>
 
-                <audio controls autoplay>
+                <audio id="miAudio" controls autoplay>
                     <source src="media/audios/Star Rail.mp3" type="audio/mpeg">
                     <source src="media/audios/Star Rail [TubeRipper.cc].ogg" type="audio/ogg">
                 </audio>
+
+                <script>
+                    window.addEventListener('load', function() {
+                        var audio = document.getElementById('miAudio');
+                        audio.play().catch(function(error) {
+                            console.log('Autoplay bloqueado por el navegador. Requiere interacción del usuario.');
+                        });
+                    });
+                </script>
 
     </nav>
     <div>
