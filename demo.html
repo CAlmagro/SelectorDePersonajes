@@ -30,10 +30,26 @@
                 </audio>
 
                 <script>
-                    window.addEventListener('load', function() {
+                    document.addEventListener('DOMContentLoaded', function() {
                         var audio = document.getElementById('miAudio');
-                        audio.play().catch(function(error) {
-                            console.log('Autoplay bloqueado por el navegador. Requiere interacción del usuario.');
+                
+                        // Forzar la reproducción después de que el DOM esté cargado
+                        function reproducirAudio() {
+                            audio.play().then(() => {
+                                console.log('Audio reproduciéndose automáticamente.');
+                            }).catch((error) => {
+                                console.log('Autoplay bloqueado. Requiere interacción del usuario.');
+                            });
+                        }
+                
+                        // Intentar reproducir el audio al cargar la página
+                        reproducirAudio();
+                
+                        // En caso de bloqueo, intentar de nuevo al hacer clic en cualquier parte de la página
+                        document.body.addEventListener('click', function() {
+                            if (audio.paused) {
+                                reproducirAudio();
+                            }
                         });
                     });
                 </script>
