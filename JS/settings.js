@@ -14,18 +14,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // Ajustar volumen del audio
     volumeSlider.addEventListener('input', function () {
         audio.volume = volumeSlider.value;
-        muteCheckbox.checked = (audio.volume === 0);
+        audio.muted = (audio.volume === 0); // Mutear si el volumen es 0
+        muteCheckbox.checked = audio.muted;
     });
 
     // Mute/unmute del audio
     muteCheckbox.addEventListener('change', function () {
         if (muteCheckbox.checked) {
-            audio.volume = 0;
-            volumeSlider.value = 0;
+            audio.muted = true; // Mutear correctamente en todos los navegadores
         } else {
-            audio.volume = 0.5; // Valor por defecto
-            volumeSlider.value = 0.5;
+            audio.muted = false;
         }
+        volumeSlider.value = audio.muted ? 0 : audio.volume; // Mantener sincronización con el slider
     });
 
     // Cambiar entre modo oscuro y claro
@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Ajustar volumen inicial
-    volumeSlider.value = audio.volume;
+    // Ajustar valores iniciales
+    volumeSlider.value = audio.muted ? 0 : audio.volume;
+    muteCheckbox.checked = audio.muted;
 });
