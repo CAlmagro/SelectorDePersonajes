@@ -441,3 +441,49 @@ footer {
         font-size: var(--titleMovile);
     }
 }
+
+/* Estilos del icono de ajustes */
+#settings-icon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Estilos del menú de ajustes */
+#settings-menu {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 220px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+}
+
+/* Estilos de los elementos del menú */
+.settings-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Estilos del control deslizante */
+#volume-slider {
+    width: 100%;
+}
+
+/* Estilos del modo oscuro */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark-mode header {
+    background-color: #333;
+}
