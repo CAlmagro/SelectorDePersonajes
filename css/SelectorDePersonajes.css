@@ -203,6 +203,12 @@ h1{
     display: none;
 }
 
+#galeria .mySlides img {
+    width: 100%;    /* Se adapta al ancho del contenedor */
+    height: auto;   /* Mantiene la proporción original de la imagen */
+    object-fit: cover; /* Opcional: recorta la imagen para llenar el espacio sin deformarla */
+}
+
 #galeria .show-slide {
     display: block;
 }
