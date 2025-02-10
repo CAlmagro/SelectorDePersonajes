@@ -395,6 +395,166 @@ footer {
     transform: scale(1.1); /* Pequeño efecto de zoom */
 }
 
+#about-the-game {
+    background-color: #2c023b; /* Morado oscuro */
+    padding: 3rem 2rem;
+    color: var(--color1);
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 80%; /* Controla el ancho del contenido */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    background-color: #5B3088;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    font-family: Roboto;
+    font-size: var(--textSize);
+    text-align: center; /* Centra el texto */
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text h2 {
+    font-family: Orbitron;
+    font-size: var(--subtitle);
+    margin-bottom: 1rem;
+    color: var(--color6);
+}
+
+.about-text p {
+    font-size: var(--textSize);
+    line-height: 1.5;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto; /* Respeta el contenido de la página */
+}
+
+/* DEMO */
+body{
+    background-color: #170F1F;
+}
+
+.title_M, .title_Chrc{
+    background-color: var(--color2);
+    padding: 10px ;
+    border-radius: 100px;
+    box-shadow: -2px -5px 0 var(--color3);
+    
+    font-weight: bold;
+    color: var(--color1);
+    text-decoration: none;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: var(--color8);
+}
+
+.slides_chrc{
+    border-radius: 100px;
+}
+
+
+
+/* Estilos del icono de ajustes */
+#settings-icon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--color1);
+}
+
+#settings-icon:hover {
+    color: var(--color9);
+    transition: 0.6s;
+}
+
+/* Estilos del menú de ajustes */
+#settings-menu {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 220px;
+    background: var(--color2);
+    color: var(--color1);
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+    font-family: Roboto;
+}
+
+/* Estilos de los elementos del menú */
+.settings-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Estilos del control deslizante */
+#volume-slider{
+    accent-color: var(--color8);
+    width: 100%;  
+}
+
+#mute-checkbox, #dark-mode-toggle{
+    accent-color: var(--color9);
+}
+
+/* Estilos del modo oscuro (nuestro claro)*/
+body.dark-mode {
+    background-color: var(--color1);
+}
+
+body.dark-mode header {
+    background: linear-gradient(0deg, var(--color1) 0%, var(--color4) 100%);
+    background-color:var(--color1);
+}
+
+body.dark-mode h1 {
+    color: var(--color2);
+}
+
+body.dark-mode #settings-menu {
+    background-color: var(--color9);
+    color: var(--color2);
+    font-weight: bold;
+    
+}
+
+body.dark-mode #mute-checkbox, #dark-mode-toggle{
+    accent-color: var(--color2);
+}
+
+
 /*MEDIA QUERY*/
 /* Tablet */
 @media screen and (max-width: 1030px){
@@ -467,69 +627,6 @@ footer {
     
 }
 
-#about-the-game {
-    background-color: #2c023b; /* Morado oscuro */
-    padding: 3rem 2rem;
-    color: var(--color1);
-}
-
-.about-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: 80%; /* Controla el ancho del contenido */
-    margin: 0 auto; /* Centra horizontalmente */
-}
-
-.about-text {
-    flex: 1;
-    min-width: 300px;
-    background-color: #5B3088;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    font-family: Roboto;
-    font-size: var(--textSize);
-    text-align: center; /* Centra el texto */
-}
-
-.about-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.about-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.about-text h2 {
-    font-family: Orbitron;
-    font-size: var(--subtitle);
-    margin-bottom: 1rem;
-    color: var(--color6);
-}
-
-.about-text p {
-    font-size: var(--textSize);
-    line-height: 1.5;
-}
-
-.about-image {
-    flex: 1;
-    min-width: 300px;
-}
-
-.about-image img {
-    max-width: 100%;
-    height: auto; /* Respeta el contenido de la página */
-}
-
 @media screen and (max-width: 768px) {
     .about-container {
         flex-direction: column;
@@ -545,48 +642,3 @@ footer {
     }
 }
 
-/* Estilos del icono de ajustes */
-#settings-icon {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-}
-
-/* Estilos del menú de ajustes */
-#settings-menu {
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    width: 220px;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    display: none;
-}
-
-/* Estilos de los elementos del menú */
-.settings-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
-
-/* Estilos del control deslizante */
-#volume-slider {
-    width: 100%;
-}
-
-/* Estilos del modo oscuro */
-body.dark-mode {
-    background-color: #1e1e1e;
-    color: white;
-}
-
-body.dark-mode header {
-    background-color: #333;
-}
