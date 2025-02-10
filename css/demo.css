@@ -44,6 +44,7 @@ main{
     align-items: center;
 }
 
+/* coloca las secciones */
 #selector{
     display: flex;
     flex-direction: column;
@@ -53,7 +54,27 @@ main{
     padding: 10% 0%;
 }
 
-#selector #character, #selector #maps{
+#selector #character{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 5%;
+    width: 40vw;
+   
+}
+
+.title_Chrc , .title_M {
+    width: 40vw;
+}
+
+.title_Chrc h1, .title_M h1{
+    /* justify-content: center; */
+    font-size: var(--subtitle);
+    font-weight:bold;
+    color: white;
+}
+
+ #selector #maps{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -61,19 +82,29 @@ main{
    
 }
 
+/* contenedor de las imagenes de personajes */
 #slideshow_characters{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 10% 0%;
+    margin: 5% 5%;
+    padding: 10px 4px;
     /* width: 50%; */
-    
+
+    background-color: var(--color3);
+    border-radius: 10%;
+    border-style: solid;
+    border-width: 6px;
+    border-color: var(--color6); 
 }
 
+/* contenedor de las imagenes de mapas */
 #slideshow_maps{
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     padding: 10% 0%;
     /* width: 75%; */
     
@@ -81,13 +112,50 @@ main{
 
 #slideshow_characters img{
     border-radius: 50%;
-    height: 75%;
+    height: 125px;
+    background-color: var(--color7);
+    border-style:inset;
+    border-width: 5px ;
+    border-color: var(--color4);
     
 }
 
 #slideshow_maps img{
     border-radius: 50%;
-    width: 50%;
-    
+    width: 120px;
 }
+
+/* Sección personaje elegido */
+
+.chosen_chrc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_chrc{
+    padding: 5% 10%;
+}
+
+.main_chrc img{
+    width: 50vw;
+}
+
+.stats{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40vw;
+}
+
+.stats h2{
+    font-family: Orbitron;
+    font-size: var(--subtitleMovile);
+    color: white;
+}
+
+
+
+
 
