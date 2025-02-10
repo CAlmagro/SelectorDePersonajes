@@ -15,3 +15,6 @@ No consigo que la parte de los mapas haga lo mismo que la de los presonajes así
 
 PROBLEMA: la zona de los mapas no hace el wrap igual que los personajes incluso cuando se le ponen las mismas características
 
+
+JS DEMO ------------------------------------------------------
+PROBLEMA: da eeror de que no encuentra el archivo de imagen que debe usar, hay que mirar si la función está mal o es la forma de bscar el archivo.
