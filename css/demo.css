@@ -1,0 +1,93 @@
+:root{
+    /* Variables texto  */
+    --title: 80pt;
+    --subtitle: 22pt;
+    --textSize: 13pt;
+
+    --titleMovile: 50pt;
+    --subtitleMovile: 20pt;
+
+    /* Variables color */
+    --color1: white;
+    --color2: #5B3088;
+    --color3: #647AAD;
+    --color4: #624185;
+    --color5: #170F1F;
+    --color6: #74bbef;
+    --color7: #bddcfd;
+    --color8: #4964dd;
+    --color9: #d9adeb;
+}
+
+/* Fuentes */
+@font-face{
+    font-family: Orbitron;
+    src: url(../media/fuentes/Orbitron-VariableFont_wght.ttf); 
+    }
+    
+@font-face{
+font-family: Roboto;
+src: url(../media/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
+}
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#selector{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+    padding: 10% 0%;
+}
+
+#selector #character, #selector #maps{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 5%;
+   
+}
+
+#slideshow_characters{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10% 0%;
+    /* width: 50%; */
+    
+}
+
+#slideshow_maps{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    padding: 10% 0%;
+    /* width: 75%; */
+    
+}
+
+#slideshow_characters img{
+    border-radius: 50%;
+    height: 75%;
+    
+}
+
+#slideshow_maps img{
+    border-radius: 50%;
+    width: 50%;
+    
+}
+
