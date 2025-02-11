@@ -17,6 +17,7 @@
     --color7: #bddcfd;
     --color8: #4964dd;
     --color9: #d9adeb;
+    --color10: #ea62da;
 }
 
 /* Fuentes */
@@ -521,7 +522,7 @@ body{
 
 /* Estilos del control deslizante */
 #volume-slider{
-    accent-color: var(--color8);
+    accent-color: var(--color6);
     width: 100%;  
 }
 
@@ -537,10 +538,6 @@ body.dark-mode {
 body.dark-mode header {
     background: linear-gradient(0deg, var(--color1) 0%, var(--color4) 100%);
     background-color:var(--color1);
-}
-
-body.dark-mode h1 {
-    color: var(--color2);
 }
 
 body.dark-mode #settings-menu {

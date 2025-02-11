@@ -71,7 +71,7 @@ main{
     /* justify-content: center; */
     font-size: var(--subtitle);
     font-weight:bold;
-    color: white;
+    color: var(--color1);
 }
 
  #selector #maps{
