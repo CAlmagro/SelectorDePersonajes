@@ -470,11 +470,18 @@ body{
     border-radius: 100px;
     box-shadow: -2px -5px 0 var(--color3);
     
+    font-size: var(--subtitle);
+    font-family: Orbitron;
     font-weight: bold;
     color: var(--color1);
     text-decoration: none;
-    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--color8);
+}
+
+.title_M h2, .title_Chrc h2{
+    margin-left: 5%;
+
 }
 
 .slides_chrc{

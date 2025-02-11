@@ -47,12 +47,21 @@ theHertaImg.onclick = function(){
 }
 
 // Selector de Mapas  
-let astralImg = document.getElementById("astral_maps");
-let spaceImg = document.getElementById("space_maps");
-let jariloImg = document.getElementById("jarilo_maps");
-let penaconyImg = document.getElementById("penacony_maps");
-let xianzhouImg = document.getElementById("xianzhou_maps");
+// let astralImg = document.getElementById("astral_maps");
+// let spaceImg = document.getElementById("space_maps");
+// let jariloImg = document.getElementById("jarilo_maps");
+// let penaconyImg = document.getElementById("penacony_maps");
+// let xianzhouImg = document.getElementById("xianzhou_maps");
 
 // astralImg.onclick = function(){
-//   chosen_charc.style.backgroundImg = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
+//   // body.style.backgroundImage = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
+
+  
 // }
+
+// $(document).ready(function() {
+//   $('.chosen_map').css("background-image", 'url("./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png")');
+//   console.log("hdvbsdrbg");
+// });
+
+
