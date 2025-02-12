@@ -88,17 +88,6 @@ function updateCarrusel() {
     moveToIndex(currentIndex);
 }
 
-// Botón de navegación anterior
-const prevButton = document.createElement('button');
-prevButton.classList.add('prev');
-prevButton.innerText = '<';
-document.getElementById('slideshow_maps').appendChild(prevButton);
-
-// Botón de navegación siguiente
-const nextButton = document.createElement('button');
-nextButton.classList.add('next');
-nextButton.innerText = '>';
-document.getElementById('slideshow_maps').appendChild(nextButton);
 
 // Función para cambiar a la imagen anterior
 prevButton.addEventListener('click', () => {
