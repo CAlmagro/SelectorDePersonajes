@@ -704,7 +704,7 @@ body.dark-mode #mute-checkbox, #dark-mode-toggle{
     /* Footer */
 
     #formulario {
-        width: 90%; 
+        width: 100%; 
         padding: 15px; 
         margin-top: 30px; 
     }
@@ -716,17 +716,18 @@ body.dark-mode #mute-checkbox, #dark-mode-toggle{
     
 }
 
-/* @media screen and (max-width: 768px) {
+/* queda por arreglar esta parte que es la del medio para que sea responsive */
+@media screen and (max-width: 480px) {
     .about-container {
         flex-direction: column;
         text-align: center;
     }
 
     .about-text, .about-image {
-        width: 100%;
+        width: 50%;
     }
 
     .main-image h1 {
         font-size: var(--titleMovile);
     }
-} */
+}
