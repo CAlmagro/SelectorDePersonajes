@@ -21,6 +21,11 @@ let himekoImg = document.getElementById("himeko_chrc");
 let jingYuanImg = document.getElementById("jingYuan_chrc");
 let robinImg = document.getElementById("robin_chrc");
 let theHertaImg = document.getElementById("theHerta_chrc");
+let DanhengILImg = document.getElementById("DanhengIL_chrc");
+let SundayImg = document.getElementById("Sunday_chrc");
+let MydeiImg = document.getElementById("Mydei_chrc");
+let KafkaImg = document.getElementById("Kafka_chrc");
+
 
 aglaeaImg.onclick = function(){
     main_img.src = "./media/imagenes/personajes splash art/Character_Aglaea_Splash_Art.webp";
@@ -44,6 +49,22 @@ robinImg.onclick = function(){
 
 theHertaImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_The_Herta_Splash_Art.webp";
+}
+
+DanhengILImg.onclick = function(){
+  main_img.src = "./media/imagenes/personajes splash art/Character_DanhengIL_Splash_Art.webp";
+}
+
+SundayImg.onclick = function(){
+  main_img.src = "./media/imagenes/personajes splash art/Character_Sunday_Splash_Art.webp";
+}
+
+MydeiImg.onclick = function(){
+  main_img.src = "./media/imagenes/personajes splash art/Character_Mydei_Splash_Art.webp";
+}
+
+KafkaImg.onclick = function(){
+  main_img.src = "./media/imagenes/personajes splash art/Character_Kafka_Splash_Art.webp";
 }
 
 // Selector de Mapas  
