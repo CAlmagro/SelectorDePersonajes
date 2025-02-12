@@ -107,7 +107,7 @@ main{
 
 .map {
     flex: 0 0 auto; /* Esto asegura que las imágenes no se estiren y tengan el tamaño adecuado */
-    width: 200px; /* Puedes ajustar este tamaño según lo que necesites */
+    width: 125px; /* Puedes ajustar este tamaño según lo que necesites */
     height: 125px; /* Mantener la altura */
     scroll-snap-align: center; /* Para que se enfoque en la imagen cuando se desplace */
 }
