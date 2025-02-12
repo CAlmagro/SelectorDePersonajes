@@ -25,6 +25,11 @@ let DanhengILImg = document.getElementById("DanhengIL_chrc");
 let SundayImg = document.getElementById("Sunday_chrc");
 let MydeiImg = document.getElementById("Mydei_chrc");
 let KafkaImg = document.getElementById("Kafka_chrc");
+let ArgentiImg = document.getElementById("Argenti_chrc");
+let AcheronImg = document.getElementById("Acheron_chrc");
+let AventurineImg = document.getElementById("Aventurine_chrc");
+let DrRatioImg = document.getElementById("DrRatio_chrc");
+let FireflyImg = document.getElementById("Firefly_chrc");
 
 
 aglaeaImg.onclick = function(){
@@ -65,6 +70,26 @@ MydeiImg.onclick = function(){
 
 KafkaImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Kafka_Splash_Art.webp";
+}
+
+ArgentiImg.onclick = function(){
+  main_img.src = "./media/imagenes/personajes splash art/Character_Argenti_Splash_Art.webp";
+}
+
+AcheronImg.onclick = function(){
+  main_img.src = "./media/imagenes/personajes splash art/Character_Acheron_Splash_Art.webp";
+}
+
+AventurineImg.onclick = function(){
+  main_img.src = "./media/imagenes/personajes splash art/Character_Aventurine_Splash_Art.webp";
+}
+
+DrRatioImg.onclick = function(){
+  main_img.src = "./media/imagenes/personajes splash art/Character_Dr.Ratio_Splash_Art.webp";
+}
+
+FireflyImg.onclick = function(){
+  main_img.src = "./media/imagenes/personajes splash art/Character_Firefly_Splash_Art.webp";
 }
 
 // Selector de Mapas  
