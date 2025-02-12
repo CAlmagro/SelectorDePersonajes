@@ -47,6 +47,55 @@ theHertaImg.onclick = function(){
 }
 
 // Selector de Mapas  
+
+let currentIndex = 0;
+const mapsContainer = document.querySelector('#slideshow_maps');
+const maps = document.querySelectorAll('#slideshow_maps .map');
+const totalMaps = maps.length;
+
+// Función para actualizar el índice y desplazar el carrusel
+function moveToIndex(index) {
+    const width = maps[0].offsetWidth + 20; // Ancho de la imagen + el espacio entre ellas
+    mapsContainer.scrollTo({
+        left: index * width, 
+        behavior: 'smooth' // Desplazamiento suave
+    });
+}
+
+// Función para mostrar la imagen actual
+function updateCarrusel() {
+    moveToIndex(currentIndex);
+}
+
+// Botón de navegación anterior
+const prevButton = document.createElement('button');
+prevButton.classList.add('prev');
+prevButton.innerText = '<';
+document.getElementById('slideshow_maps').appendChild(prevButton);
+
+// Botón de navegación siguiente
+const nextButton = document.createElement('button');
+nextButton.classList.add('next');
+nextButton.innerText = '>';
+document.getElementById('slideshow_maps').appendChild(nextButton);
+
+// Función para cambiar a la imagen anterior
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex === 0) ? totalMaps - 1 : currentIndex - 1;
+    updateCarrusel();
+});
+
+// Función para cambiar a la imagen siguiente
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex === totalMaps - 1) ? 0 : currentIndex + 1;
+    updateCarrusel();
+});
+
+// Inicializar carrusel
+updateCarrusel();
+
+
+
 // let astralImg = document.getElementById("astral_maps");
 // let spaceImg = document.getElementById("space_maps");
 // let jariloImg = document.getElementById("jarilo_maps");
