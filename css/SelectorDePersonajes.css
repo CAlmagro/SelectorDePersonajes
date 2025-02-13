@@ -487,6 +487,9 @@ body{
     border-radius: 100px;
 }
 
+span{
+    color: var(--color1);
+}
 
 
 /* Estilos del icono de ajustes */
@@ -536,7 +539,7 @@ body{
     accent-color: var(--color9);
 }
 
-/* Estilos del modo oscuro (nuestro claro)*/
+/* Estilos del modo claro)*/
 body.dark-mode {
     background-color: var(--color1);
 }
@@ -557,6 +560,9 @@ body.dark-mode #mute-checkbox, #dark-mode-toggle{
     accent-color: var(--color2);
 }
 
+body.dark-mode span{
+    color: var(--color2);
+}
 
 /*MEDIA QUERY*/
 /* Tablet */

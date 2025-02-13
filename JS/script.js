@@ -37,95 +37,127 @@ var atkNum = document.getElementById('atk_num');
 var hpBarra = document.getElementById('hp-barra');
 var atkBarra = document.getElementById('atk-barra');
 
+hpBarra.style.width = 60 + "%";
+atkBarra.style.width = 90 + "%";
+
 aglaeaImg.onclick = function(){
     main_img.src = "./media/imagenes/personajes splash art/Character_Aglaea_Splash_Art.webp";
     hpNum.innerText = '1242';
+    hpBarra.style.width = 60 + "%";
     atkNum.innerText = '699';
+    atkBarra.style.width = 90 + "%";
 }
 
 gepardImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Gepard_Splash_Art.webp";
   hpNum.innerText = '1397';
-  // hpBarra.width = 90%;
+  hpBarra.style.width = 90 + "%";
   atkNum.innerText = '543';
+  atkBarra.style.width = 30 + "%";
 }
 
 himekoImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Himeko_Splash_Art.webp";
   hpNum.innerText = '1048';
+  hpBarra.style.width = 30 + "%";
   atkNum.innerText = '757';
+  atkBarra.style.width = 95 + "%";
 }
 
 jingYuanImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Jing_Yuan_Splash_Art.webp";
   hpNum.innerText = '1164';
+  hpBarra.style.width = 40 + "%";
   atkNum.innerText = '699';
+  atkBarra.style.width = 85 + "%";
 }
 
 robinImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Robin_Splash_Art.webp";
   hpNum.innerText = '1281';
+  hpBarra.style.width = 50 + "%";
   atkNum.innerText = '640';
+  atkBarra.style.width = 50 + "%";
 }
 
 theHertaImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_The_Herta_Splash_Art.webp";
   hpNum.innerText = '1164';
+  hpBarra.style.width = 40 + "%";
   atkNum.innerText = '679';
+  atkBarra.style.width = 80 + "%";
 }
 
 DanhengILImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_DanhengIL_Splash_Art.webp";
   hpNum.innerText = '1242';
+  hpBarra.style.width = 55 + "%";
   atkNum.innerText = '699';
+  atkBarra.style.width = 85 + "%";
 }
 
 SundayImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Sunday_Splash_Art.webp";
   hpNum.innerText = '1242';
+  hpBarra.style.width = 55 + "%";
   atkNum.innerText = '640';
+  atkBarra.style.width = 50 + "%";
 }
 
 MydeiImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Mydei_Splash_Art.webp";
   hpNum.innerText = '1552';
+  hpBarra.style.width = 100 + "%";
   atkNum.innerText = '427';
+  atkBarra.style.width = 20 + "%";
 }
 
 KafkaImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Kafka_Splash_Art.webp";
   hpNum.innerText = '1087';
+  hpBarra.style.width = 20 + "%";
   atkNum.innerText = '679';
+  atkBarra.style.width = 80 + "%";
 }
 
 ArgentiImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Argenti_Splash_Art.webp";
   hpNum.innerText = '1048';
+  hpBarra.style.width = 25 + "%";
   atkNum.innerText = '737';
+  atkBarra.style.width = 95 + "%";
 }
 
 AcheronImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Acheron_Splash_Art.webp";
   hpNum.innerText = '1125';
+  hpBarra.style.width = 40 + "%";
   atkNum.innerText = '699';
+  atkBarra.style.width = 85 + "%";
 }
 
 AventurineImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Aventurine_Splash_Art.webp";
   hpNum.innerText = '1203';
+  hpBarra.style.width = 50 + "%";
   atkNum.innerText = '446';
+  atkBarra.style.width = 25 + "%";
 }
 
 DrRatioImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Dr.Ratio_Splash_Art.webp";
   hpNum.innerText = '1048';
+  hpBarra.style.width = 25 + "%";
   atkNum.innerText = '776';
+  atkBarra.style.width = 100 + "%";
 }
 
 FireflyImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Firefly_Splash_Art.webp";
   hpNum.innerText = '815';
+  hpBarra.style.width = 10 + "%";
   atkNum.innerText = '524';
+  atkBarra.style.width = 30 + "%";
 }
 
 // Selector de Mapas  

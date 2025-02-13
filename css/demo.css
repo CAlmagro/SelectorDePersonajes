@@ -201,7 +201,7 @@ button {
 .stats span{
     font-family: Orbitron;
     font-size: var(--subtitleMovile);
-    color: white;
+    color: var(--color1);
     display: flex;
     justify-content: space-between;
 }
@@ -228,7 +228,7 @@ button {
 }
 
 /* ANIMACIONES */
-#hp-barra{
+/* #hp-barra{
     animation: hp-barra 2s forwards;
 }
 
@@ -246,7 +246,7 @@ button {
     100%{
         width: 50%;
     }
-}
+} */
 
 
 
