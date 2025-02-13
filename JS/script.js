@@ -1,18 +1,23 @@
-// $(document).ready(function() {
 
-//     let mainImg = document.querySelector(".main_img");
 
-//     let agleaImg = document.querySelector(".aglea_chrc");
-//     $(agleaImg).on({
-//         'click': function() {
-//           let src = ($(mainImg).attr('src') == 'media/imagenes/personajes splash art/Character_Aglaea_Splash_Art.webp') 
-//             // 'https://www.w3docs.com/uploads/media/book_gallery/0001/02/c4ba86c634f0f9c7ea055964c7f7436bab2bb698.png' :
-//             // 'https://ru.w3docs.com/uploads/media/book_gallery/0001/02/c8d75681dcd87da6f7d8ebfa0cdb40cbb403bed8.png';
+//on hover
 
-//           $(mainImg).attr('src', src);
-//         }
-//       });
-//   });
+let buttons = document.querySelectorAll("#slideshow_characters div img");
+
+$(buttons).on('mouseover', function(){
+    $(this).css({"transform": "scale(1.4)", "box-shadow": "2px 2px 4px var(--color3)", "background-color": "var(--color9)", "border-color": "var(--color7)"});
+});
+
+$(buttons).on('mouseleave', function(){
+  $(this).css({"transform": "scale(1)", "box-shadow": "none", "background-color": "var(--color7)", "border-color": "var(--color4)"});
+});
+
+
+
+$(document).ready(function(){
+  console.log(buttons);
+  
+});
 
 // Selector de Personajes   
 let aglaeaImg = document.getElementById("aglea_chrc");
@@ -46,6 +51,7 @@ aglaeaImg.onclick = function(){
     hpBarra.style.width = 60 + "%";
     atkNum.innerText = '699';
     atkBarra.style.width = 90 + "%";
+    
 }
 
 gepardImg.onclick = function(){
@@ -208,5 +214,10 @@ let xianzhouImg = document.getElementById("xianzhou_maps");
 astralImg.onclick = function(){
   main_map.scr = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
 }
+
+
+
+
+
 
 

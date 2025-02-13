@@ -170,6 +170,8 @@ button {
     border-style:inset;
     border-width: 5px ;
     border-color: var(--color4); 
+
+    transition: 0.33s;
 }
 
 /* Sección personaje elegido */
@@ -254,6 +256,14 @@ button {
     border-radius: 10px;
     background-color: var(--color9);
 }
+
+/* On hover */
+/* .hovering{
+    height: 11vh;
+    background-color: var(--color9);
+    border-color: var(--color7); 
+    box-shadow: 2px 2px 4px var(--color3);
+} */
 
 /* ANIMACIONES */
 /* #hp-barra{
