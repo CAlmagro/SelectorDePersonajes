@@ -125,7 +125,7 @@ src: url(../media/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
 
 .map {
     flex: 0 0 auto; /* Esto asegura que las imágenes no se estiren y tengan el tamaño adecuado */
-    /* width: 125px; Puedes ajustar este tamaño según lo que necesites */
+    /* width: 125px; Puedes ajustar este tamaño según se necesite */
     height: 13vh; /* Mantener la altura */
     scroll-snap-align: center; /* Para que se enfoque en la imagen cuando se desplace */
 }
@@ -139,6 +139,7 @@ src: url(../media/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
     border-style: inset;
     border-width: 5px;
     border-color: var(--color4);
+  
 }
 
 button {
