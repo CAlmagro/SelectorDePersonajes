@@ -31,65 +31,101 @@ let AventurineImg = document.getElementById("Aventurine_chrc");
 let DrRatioImg = document.getElementById("DrRatio_chrc");
 let FireflyImg = document.getElementById("Firefly_chrc");
 
+var hpNum = document.getElementById('hp_num');
+var atkNum = document.getElementById('atk_num');
+
+var hpBarra = document.getElementById('hp-barra');
+var atkBarra = document.getElementById('atk-barra');
 
 aglaeaImg.onclick = function(){
     main_img.src = "./media/imagenes/personajes splash art/Character_Aglaea_Splash_Art.webp";
+    hpNum.innerText = '1242';
+    atkNum.innerText = '699';
 }
 
 gepardImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Gepard_Splash_Art.webp";
+  hpNum.innerText = '1397';
+  // hpBarra.width = 90%;
+  atkNum.innerText = '543';
 }
 
 himekoImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Himeko_Splash_Art.webp";
+  hpNum.innerText = '1048';
+  atkNum.innerText = '757';
 }
 
 jingYuanImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Jing_Yuan_Splash_Art.webp";
+  hpNum.innerText = '1164';
+  atkNum.innerText = '699';
 }
 
 robinImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Robin_Splash_Art.webp";
+  hpNum.innerText = '1281';
+  atkNum.innerText = '640';
 }
 
 theHertaImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_The_Herta_Splash_Art.webp";
+  hpNum.innerText = '1164';
+  atkNum.innerText = '679';
 }
 
 DanhengILImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_DanhengIL_Splash_Art.webp";
+  hpNum.innerText = '1242';
+  atkNum.innerText = '699';
 }
 
 SundayImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Sunday_Splash_Art.webp";
+  hpNum.innerText = '1242';
+  atkNum.innerText = '640';
 }
 
 MydeiImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Mydei_Splash_Art.webp";
+  hpNum.innerText = '1552';
+  atkNum.innerText = '427';
 }
 
 KafkaImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Kafka_Splash_Art.webp";
+  hpNum.innerText = '1087';
+  atkNum.innerText = '679';
 }
 
 ArgentiImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Argenti_Splash_Art.webp";
+  hpNum.innerText = '1048';
+  atkNum.innerText = '737';
 }
 
 AcheronImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Acheron_Splash_Art.webp";
+  hpNum.innerText = '1125';
+  atkNum.innerText = '699';
 }
 
 AventurineImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Aventurine_Splash_Art.webp";
+  hpNum.innerText = '1203';
+  atkNum.innerText = '446';
 }
 
 DrRatioImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Dr.Ratio_Splash_Art.webp";
+  hpNum.innerText = '1048';
+  atkNum.innerText = '776';
 }
 
 FireflyImg.onclick = function(){
   main_img.src = "./media/imagenes/personajes splash art/Character_Firefly_Splash_Art.webp";
+  hpNum.innerText = '815';
+  atkNum.innerText = '524';
 }
 
 // Selector de Mapas  
