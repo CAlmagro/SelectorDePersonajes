@@ -37,21 +37,23 @@ src: url(../media/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
     scroll-behavior: smooth;
 }
 
-main{
+.demo_main{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    height: 100vh;
+    /* justify-content: space-between; */
+    /* align-items: center; */
 }
 
 /* coloca las secciones */
 #selector{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
     width: 50vw;
-    height: 100vh;
+    /* height: 100vh;
+    width: 100vw; */
     /* padding: 10% 0%; */
 }
 
@@ -64,9 +66,20 @@ main{
    
 }
 
-.title_Chrc , .title_M {
-    width: 40vw;
+#selector #character{
+    padding: 5vh 0;
+    height: 50vh;
 }
+
+#selector #maps{
+    height: 35vh;
+}
+
+
+.title_Chrc , .title_M {
+    width: 35vw;
+}
+
 
 /* contenedor de las imagenes de personajes */
 #slideshow_characters{
@@ -75,10 +88,11 @@ main{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin: 5% 5%;
+    margin: 5% 7%;
+    /* margin-left:10%; */
     padding: 10px 4px;
-    /* width: 50%; */
-    height: 30vh;
+    width: 75%;
+    height: 80%;
 
     background-color: var(--color3);
     border-radius: 50px;
@@ -95,6 +109,8 @@ main{
     align-items: center;
     margin: 5% 5%;
     padding: 10px 4px;
+    width: 75%;
+    height: 80%;
 
     background-color: var(--color3);
     border-radius: 50px;
@@ -109,8 +125,8 @@ main{
 
 .map {
     flex: 0 0 auto; /* Esto asegura que las imágenes no se estiren y tengan el tamaño adecuado */
-    width: 125px; /* Puedes ajustar este tamaño según lo que necesites */
-    height: 125px; /* Mantener la altura */
+    /* width: 125px; Puedes ajustar este tamaño según lo que necesites */
+    height: 13vh; /* Mantener la altura */
     scroll-snap-align: center; /* Para que se enfoque en la imagen cuando se desplace */
 }
 
@@ -159,39 +175,39 @@ button {
 /* Sección personaje elegido */
 
 #selected{
-    width: 50vw;
-    height: 100vh;
+    width: 60vw;
+    height: 90vh;
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
+    justify-content: space-between;
     flex-direction: column;
 }
 
 .container{
     position: relative;
-    width: 50vw;
-    height: 100vh;
+    width: 60vw;
+    height: 60vh;
     display: flex;
 }
 
-#main_chrc{
+/* #main_chrc{
     padding: 5% 10%;
     margin-right: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     /* position: absolute; */
-}
+/* } */
 
 #main_img{
     width: 50vw;
-    height: 100vh;
+    height: 80vh;
 }
 
 #main_map{
     position: absolute;
     z-index: -1;
     right: 0;
+    top: -5vh;
     width: 100vw;
     height: 100vh;
 }
@@ -202,10 +218,12 @@ button {
     justify-content: space-between;
     align-items: center;
     margin-right: 10%;
+    height: 20vh;
 }
 
 .stats_bars{
     width: 100%;
+    height: 20vh;
 }
 
 .stats span{
