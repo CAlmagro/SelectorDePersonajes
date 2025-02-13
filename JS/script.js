@@ -212,10 +212,11 @@ let penaconyImg = document.getElementById("penacony_maps");
 let xianzhouImg = document.getElementById("xianzhou_maps");
 
 $("#astral_maps").on("click", function(){
-  main_map.scr = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
+  main_map.src = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
   console.log("hola");
   
 });
+
 
 
 
