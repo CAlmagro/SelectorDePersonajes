@@ -5,17 +5,17 @@
 let buttons = document.querySelectorAll("#slideshow_characters div img");
 
 $(buttons).on('mouseover', function(){
-    $(this).css({"transform": "scale(1.4)", "box-shadow": "2px 2px 4px var(--color3)", "background-color": "var(--color9)", "border-color": "var(--color7)"});
+    $(this).css({"transform": "scale(1.4)", "box-shadow": "0px 0px 10px var(--color1)", "background-color": "var(--color9)", "border-color": "var(--color7)"});
 });
 
 $(buttons).on('mouseleave', function(){
   $(this).css({"transform": "scale(1)", "box-shadow": "none", "background-color": "var(--color7)", "border-color": "var(--color4)"});
 });
 
-
+let astralImg = document.getElementById("astral_maps");
 
 $(document).ready(function(){
-  console.log(buttons);
+  console.log(astralImg);
   
 });
 
@@ -205,15 +205,17 @@ updateCarrusel();
 
 
 //Mapa selecionado
-let astralImg = document.getElementById("astral_maps");
+
 let spaceImg = document.getElementById("space_maps");
 let jariloImg = document.getElementById("jarilo_maps");
 let penaconyImg = document.getElementById("penacony_maps");
 let xianzhouImg = document.getElementById("xianzhou_maps");
 
-astralImg.onclick = function(){
+$("#astral_maps").on("click", function(){
   main_map.scr = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
-}
+  console.log("hola");
+  
+});
 
 
 

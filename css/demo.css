@@ -255,6 +255,8 @@ button {
     height: 8px;
     border-radius: 10px;
     background-color: var(--color9);
+
+    transition: 0.33S;
 }
 
 /* On hover */
