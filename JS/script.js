@@ -198,22 +198,15 @@ nextButton.addEventListener('click', () => {
 updateCarrusel();
 
 
+//Mapa selecionado
+let astralImg = document.getElementById("astral_maps");
+let spaceImg = document.getElementById("space_maps");
+let jariloImg = document.getElementById("jarilo_maps");
+let penaconyImg = document.getElementById("penacony_maps");
+let xianzhouImg = document.getElementById("xianzhou_maps");
 
-// let astralImg = document.getElementById("astral_maps");
-// let spaceImg = document.getElementById("space_maps");
-// let jariloImg = document.getElementById("jarilo_maps");
-// let penaconyImg = document.getElementById("penacony_maps");
-// let xianzhouImg = document.getElementById("xianzhou_maps");
-
-// astralImg.onclick = function(){
-//   // body.style.backgroundImage = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
-
-  
-// }
-
-// $(document).ready(function() {
-//   $('.chosen_map').css("background-image", 'url("./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png")');
-//   console.log("hdvbsdrbg");
-// });
+astralImg.onclick = function(){
+  main_map.scr = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
+}
 
 

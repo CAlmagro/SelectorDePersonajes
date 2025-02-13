@@ -50,8 +50,9 @@ main{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    width: 50%;
-    padding: 10% 0%;
+    width: 50vw;
+    height: 100vh;
+    /* padding: 10% 0%; */
 }
 
 #selector #character, #selector #maps{
@@ -77,6 +78,7 @@ main{
     margin: 5% 5%;
     padding: 10px 4px;
     /* width: 50%; */
+    height: 30vh;
 
     background-color: var(--color3);
     border-radius: 50px;
@@ -145,46 +147,54 @@ button {
     right: 10px;
 }
 
-
-
 #slideshow_characters img {
     border-radius: 50%;
-    height: 125px;
+    height: 9vh;
     background-color: var(--color7);
     border-style:inset;
     border-width: 5px ;
-    border-color: var(--color4);
-    
+    border-color: var(--color4); 
 }
 
 /* Sección personaje elegido */
 
-.chosen_chrc{
+#selected{
+    width: 50vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
 }
 
-.main_chrc{
+.container{
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+}
+
+#main_chrc{
     padding: 5% 10%;
     margin-right: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.main_chrc img{
-    width: 50vw;
     /* position: absolute; */
 }
 
+#main_img{
+    width: 50vw;
+    height: 100vh;
+}
 
-/* .chosen_map{
-    position: relative;
-    z-index: -100;
-
-} */
+#main_map{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+}
 
 /* Barras de stats */
 .stats{
