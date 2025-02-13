@@ -259,6 +259,35 @@ button {
     transition: 0.33S;
 }
 
+#slideshow_maps {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory; 
+    scrollbar-width: thin; 
+    scrollbar-color: var(--color8) var(--color3); 
+    width: auto; 
+    max-width: 600px; 
+}
+
+#slideshow_maps::-webkit-scrollbar {
+    height: 8px; 
+}
+
+#slideshow_maps::-webkit-scrollbar-track {
+    background-color: var(--color3);
+    border-radius: 10px;
+}
+
+
+#slideshow_maps::-webkit-scrollbar-thumb {
+    background-color: var(--color8);
+    border-radius: 10px;
+    min-width: 40px; 
+}
+
+#slideshow_maps::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color2);
+}
+
 /* On hover */
 /* .hovering{
     height: 11vh;
