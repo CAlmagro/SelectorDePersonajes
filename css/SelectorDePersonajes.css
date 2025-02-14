@@ -600,21 +600,27 @@ body.dark-mode span{
     font-weight: bold;
 }
 
+
 /*MEDIA QUERY*/
 /* Tablet */
-@media screen and (max-width: 1030px){
-    /* MAIN */
- 
-}
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 900px) {
 
     /* MENU */
    #logo{
         padding: 1% 2%;
         display: flex;
         align-self: flex-start; 
+        margin-top: 20px;
+        margin-left: 25px;
+   }
 
+   #logo img {
+      width: 200px;
+   }
+
+   .main-image {
+    padding-top: 50px;
    }
 
    #menu .menu-flex{
@@ -683,24 +689,30 @@ body.dark-mode span{
     }
 
     .main-image h1 {
-        font-size: var(--titleMovile);
+        font-size:  40px;
+        -webkit-text-stroke-width: 2px;
+        
     }
 }
 
 /* Mobile*/
-@media screen and (max-width: 480px){
-    /* MAIN */
- 
-}
 
 @media screen and (max-width: 480px) {
 
-    /* MENU */
-   #logo{
+   #logo {
         padding:  2%;
         display: flex;
         align-self: flex-start; 
+        margin-top: 20px;
+        margin-left: 45px;
+   }
 
+   #logo img {
+      width: 100px;
+   }
+
+   .main-image {
+    padding-top: 50px;
    }
 
    #menu .menu-flex{
@@ -758,11 +770,11 @@ body.dark-mode span{
     
 }
 
-/* queda por arreglar esta parte que es la del medio para que sea responsive */
 @media screen and (max-width: 480px) {
     .about-container {
-        flex-direction: column;
+        flex-direction:column;
         text-align: center;
+        align-content: center;
     }
 
     .about-text, .about-image {
@@ -770,10 +782,14 @@ body.dark-mode span{
     }
 
     .main-image h1 {
-        font-size: var(--titleMovile);
+        font-size: 25px;
+        -webkit-text-stroke-width: 2px;
+    }
+
+    .about-video {
+        display: none;
     }
 }
-
 
 /* Animaciones */
 
