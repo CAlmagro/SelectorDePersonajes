@@ -157,7 +157,7 @@ SundayImg.onclick = function(){
 
 MydeiImg.onclick = function(){
   $(main_img).fadeOut(333, function(){
-    main_img.src = "./media/imagenes/personajes splash art/Character_Mydei_Splash_Art.webp";
+    main_img.src = "./media/imagenes/personajes splash art/Character_Mydei_Splash_Art.png";
   });
   $(main_img).fadeIn(333);
 
