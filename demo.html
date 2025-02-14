@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="css/SelectorDePersonajes.css">
 </head>
 
+
 <body>
     <header>
         <div id="logo">
             <a href="index.html"><img src="media/imagenes/logo letras.png" alt=""></a>
         </div>
 
+
         <!-- Icono de ajustes -->
         <i id="settings-icon" class="fa-solid fa-gear"></i>
+
 
         <!-- Menú de ajustes -->
         <div id="settings-menu">
@@ -28,14 +31,16 @@
                 <input type="checkbox" id="mute-checkbox">
             </div>
 
+
             <div class="settings-item">
                 <label for="dark-mode-toggle">Modo Claro</label>
                 <input type="checkbox" id="dark-mode-toggle">
             </div>
         </div>
 
+
         <nav id="menu">
-        
+       
             <input type="checkbox" id="menuToggle">      
                 <ul class="menu-flex">
                     <audio id="miAudio" controls autoplay>
@@ -43,12 +48,12 @@
                         <source src="media/audios/Star Rail [TubeRipper.cc].ogg" type="audio/ogg">
                     </audio>
                 </ul>
-    
+   
                     <!-- ¿SCRIPT AUDIO? -->
                     <script>
                         document.addEventListener('DOMContentLoaded', function() {
                             var audio = document.getElementById('miAudio');
-                    
+                   
                             // Forzar la reproducción después de que el DOM esté cargado
                             function reproducirAudio() {
                                 audio.play().then(() => {
@@ -57,10 +62,10 @@
                                     console.log('Autoplay bloqueado. Requiere interacción del usuario.');
                                 });
                             }
-                    
+                   
                             // Intentar reproducir el audio al cargar la página
                             reproducirAudio();
-                    
+                   
                             // En caso de bloqueo, intentar de nuevo al hacer clic en cualquier parte de la página
                             document.body.addEventListener('click', function() {
                                 if (audio.paused) {
@@ -72,114 +77,126 @@
         </nav>
     </header>
 
+
     <main class="demo_main">
         <audio id="miAudio" autoplay loop>
             <source src="media/audios/Star Rail.mp3" type="audio/mpeg">
             <source src="media/audios/Star Rail [TubeRipper.cc].ogg" type="audio/ogg">
         </audio>
 
+
         <section id="selector">
+
 
             <div id="character">
                 <div class="title_Chrc">
                     <h2>PERSONAJES</h2>
                 </div>
-    
+   
                 <div id="slideshow_characters">
                     <div >
                         <img id="aglea_chrc"  src="media/imagenes/personajes iconos/Character_Aglaea_Icon.webp" alt="Aglea Star rail Icon">
                     </div>
-    
+   
                     <div id="gepard_chrc">
                         <img src="media/imagenes/personajes iconos/Character_Gepard_Icon.webp" alt="Gepard Star rail Icon">
                     </div>
-    
+   
                     <div id="himeko_chrc">
                         <img src="media/imagenes/personajes iconos/Character_Himeko_Icon.webp" alt="Himeko Star rail Icon">
                     </div>
-    
+   
                     <div id="jingYuan_chrc">
                         <img src="media/imagenes/personajes iconos/Character_Jing_Yuan_Icon.webp" alt="Jing Yuan Star rail Icon">
                     </div>
-    
+   
                     <div id="robin_chrc">
                         <img src="media/imagenes/personajes iconos/Character_Robin_Icon.webp" alt="Robin Star rail Icon">
                     </div>
-    
+   
                     <div id="theHerta_chrc">
                         <img src="media/imagenes/personajes iconos/Character_The_Herta_Icon.webp" alt="The Herta Star rail Icon">
                     </div>
+
 
                     <div id="DanhengIL_chrc">
                         <img src="media/imagenes/personajes iconos/Character_DanhengIL_Icon.webp" alt="Danheng IL Star rail Icon">
                     </div>
 
+
                     <div id="Sunday_chrc">
                         <img src="media/imagenes/personajes iconos/Character_Sunday_Icon.webp" alt="Sunday Star rail Icon">
                     </div>
+
 
                     <div id="Mydei_chrc">
                         <img src="media/imagenes/personajes iconos/Character_Mydei_Icon.webp" alt="Mydei Star rail Icon">
                     </div>
 
+
                     <div id="Kafka_chrc">
                         <img src="media/imagenes/personajes iconos/Character_Kafka_Icon.webp" alt="Kafka Star rail Icon">
                     </div>
+
 
                     <div id="Argenti_chrc">
                         <img src="media/imagenes/personajes iconos/Character_Argenti_Icon.webp" alt="Argenti Star rail Icon">
                     </div>
 
+
                     <div id="Acheron_chrc">
                         <img src="media/imagenes/personajes iconos/Character_Acheron_Icon.webp" alt="Acheron Star rail Icon">
                     </div>
+
 
                     <div id="Aventurine_chrc">
                         <img src="media/imagenes/personajes iconos/Character_Aventurine_Icon.webp" alt="Aventurine Star rail Icon">
                     </div>
 
+
                     <div id="DrRatio_chrc">
                         <img src="media/imagenes/personajes iconos/Character_Dr.ratio_Icon.webp" alt="DrRatio Star rail Icon">
                     </div>
 
+
                     <div id="Firefly_chrc">
                         <img src="media/imagenes/personajes iconos/Character_Firefly_Icon.webp" alt="Firefly Star rail Icon">
                     </div>
-    
-                    <!-- Fabicon arrows 
+   
+                    <!-- Fabicon arrows
                     <a class="prev"><i class="fa-solid fa-caret-left"></i></a>
                     <a class="next"><i class="fa-solid fa-caret-right"></i></a> -->
                 </div>
-    
+   
             </div>
-            
+           
             <div id="maps">
                
                <div class="title_M">
                    <h2>MAPAS</h2>
                </div>
-    
+   
                 <div id="slideshow_maps">
                     <div id="amphoreus_maps">
                         <img src="media/imagenes/mundos/World_Amphoreus.webp" alt="Amphoreus planet star rail">
                     </div>
-                    
+                   
                     <div id="astral_maps" >
                         <img src="media/imagenes/mundos/World_Astral_Express.webp" alt="Astral Expres star rail">
                     </div>
-    
+   
                     <div id="space_maps">
                         <img src="media/imagenes/mundos/World_Herta_Space_Station.webp" alt="Herta Space Sttion Map view">
                     </div>
-    
+   
                     <div id="jarilo_maps">
                         <img src="media/imagenes/mundos/World_Jarilo-VI.webp" alt="Jarilo VI planet star rail">
                     </div>
-    
+   
                     <div id="penacony_maps">
                         <img src="media/imagenes/mundos/World_Penacony.webp" alt="Penacony planet star rail">
                     </div>
-    
+   
                     <div id="xianzhou_maps">
                         <img src="media/imagenes/mundos/World_The_Xianzhou_Luofu.webp" alt="Luofu ship star rail">
                     </div>
@@ -187,11 +204,13 @@
             </div>
         </section>
 
+
         <section id="selected">
             <div class="container">
                 <img id="main_img" src="media/imagenes/personajes splash art/Character_Aglaea_Splash_Art.webp" alt="">
                 <img id="main_map" src="media/imagenes/mundos splash art/World_Amphoreus_Splash_Art.png" alt="">
             </div>
+
 
             <div class="stats">          
                 <div class="stats_bars">
@@ -200,14 +219,17 @@
                         <span id="hp_num">1242</span>
                     </div>
 
+
                     <div class="hp_bar">
                         <div id="hp-barra"></div>
                     </div>
+
 
                     <div class="stats_atk">
                         <span>ATK</span>
                         <span id="atk_num">699</span>
                     </div>
+
 
                     <div class="atk_bar">
                         <div id="atk-barra"></div>
@@ -217,11 +239,17 @@
         </section>  
     </main>
 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <script src="JS/settings.js"></script>
 
+
     <script src="JS/script.js"></script>
-    
+   
 </body>
 </html>
+
+
+
