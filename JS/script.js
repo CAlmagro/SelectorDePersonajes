@@ -9,7 +9,7 @@ $(buttonsC).on('mouseover', function(){
 });
 
 $(buttonsC).on('mouseleave', function(){
-  $(this).css({"transform": "scale(1)", "box-shadow": "none", "background-color": "var(--color7)", "border-color": "var(--color9)"});
+  $(this).css({"transform": "scale(1)", "box-shadow": "none", "background-color": "var(--color7)", "border-color": "var(--color4)"});
 });
 
 //on hover mapas
@@ -20,17 +20,38 @@ $(buttonsM).on('mouseover', function(){
 });
 
 $(buttonsM).on('mouseleave', function(){
-$(this).css({"transform": "scale(1)", "box-shadow": "none", "background-color": "var(--color7)", "border-color": "var(--color9)"});
+$(this).css({"transform": "scale(1)", "box-shadow": "none", "background-color": "var(--color7)", "border-color": "var(--color4)"});
 });
 
-//on hover botón ajustes
-let sttingsBtn = document.getElementById("#settings-icon");
-$(sttingsBtn).on('mouseover', function(){
-  $(sttingsBtn).animate({rotate: '6000deg'}, slow);
+//on hover botones principal 
+let btnMenu = document.querySelectorAll(".menu-flex li a");
+
+// $(btnMenu).on('mouseover', function(){
+//   $(this).addClass("btnHover");
+// });
+
+// $(btnMenu).on('mouseleave', function(){
+//   $(this).removeClass("btnHover");
+// });
+
+$(btnMenu).on('mouseover', function(){
+  $(this).css({"background-color": "var(--color9)", "box-shadow": "0px 0px 10px var(--color1), -2px -5px 0 var(--color10), 2px 5px 0 var(--color7)", "transform": "scale(1.1)"});
 });
 
+$(btnMenu).on('mouseleave', function(){
+  $(this).css({"background-color": "var(--color2)", "box-shadow": "-2px -5px 0 var(--color3)", "transform": "scale(1)"});
+});
 
+// On hover logo menu
+let btnLogo = document.querySelectorAll("#logo a img");
 
+$(btnLogo).on('mouseover', function(){
+  $(this).css({"transform": "scale(1.3)"});
+});
+
+$(btnLogo).on('mouseleave', function(){
+  $(this).css({"transform": "scale(1)"});
+});
 
 
 // Selector de Personajes   
@@ -157,7 +178,7 @@ SundayImg.onclick = function(){
 
 MydeiImg.onclick = function(){
   $(main_img).fadeOut(333, function(){
-    main_img.src = "./media/imagenes/personajes splash art/Character_Mydei_Splash_Art.png";
+    main_img.src = "./media/imagenes/personajes splash art/Character_Mydei_Splash_Art.webp";
   });
   $(main_img).fadeIn(333);
 
@@ -265,7 +286,7 @@ astralImg.onclick = function(){
 
 spaceImg.onclick = function(){
   $(main_map).fadeTo(333, 0.4, function(){
-    main_map.src = "./media/imagenes/mundos splash art/World_Herta_Space_Station_Splash_Art.jpg";
+    main_map.src = "./media/imagenes/mundos splash art/World_Herta_Space_Station_Splash_Art.png";
     
   });
   $(main_map).fadeTo(333, 1);
@@ -273,7 +294,7 @@ spaceImg.onclick = function(){
 
 jariloImg.onclick = function(){
   $(main_map).fadeTo(333, 0.4, function(){
-    main_map.src = "./media/imagenes/mundos splash art/World_Jarilo-VI_Splash_Art.jpg";
+    main_map.src = "./media/imagenes/mundos splash art/World_Jarilo-VI_Splash_Art.png";
     
   });
   $(main_map).fadeTo(333, 1);
@@ -289,7 +310,7 @@ penaconyImg.onclick = function(){
 
 xianzhouImg.onclick = function(){
   $(main_map).fadeTo(333, 0.4, function(){
-    main_map.src = "./media/imagenes/mundos splash art/World_The_Xianzhou_Luofu_Splash_Art.jpg";
+    main_map.src = "./media/imagenes/mundos splash art/World_The_Xianzhou_Luofu_Splash_Art.png";
     
   });
   $(main_map).fadeTo(333, 1);

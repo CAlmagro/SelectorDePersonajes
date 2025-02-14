@@ -72,6 +72,8 @@ font-family: Roboto;
 #logo img{
     height: 30%;
     width: 30%;
+
+    transition: 0.33s;
 }
 
 
@@ -108,11 +110,13 @@ text-decoration: none;
 transition: 0.33s;
 }
 
-nav .menu-flex a:hover{
-color: var(--color5);
-background-color: var(--color1);
-box-shadow: 0px 0px 10px var(--color1), 0px 0px 10px var(--color1), 0px 0px 10px var(--color1);
-}
+
+/* nav .btnHover a{
+    background-color: green;
+    padding: 10px 20px;
+    border-radius: 100px;
+    box-shadow: -2px -5px 0 yellowgreen;
+} */
 
 .btnCloseMenu, nav .menu-flex .fa-xmark{
 display: none;
