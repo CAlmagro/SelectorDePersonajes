@@ -546,19 +546,19 @@ body.dark-mode {
 }
 
 body.dark-mode header {
-    background: linear-gradient(0deg, var(--color1) 0%, var(--color4) 100%);
-    background-color:var(--color1);
+    background: linear-gradient(0deg, var(--color9) 0%, var(--color4) 100%);
+    background-color:var(--color9);
 }
 
 body.dark-mode #settings-menu {
-    background-color: var(--color9);
+    background-color: var(--color1);
     color: var(--color2);
     font-weight: bold;
     
 }
 
 body.dark-mode #mute-checkbox, #dark-mode-toggle{
-    accent-color: var(--color2);
+    accent-color: var(--color9);
 }
 
 body.dark-mode #slideshow_maps {
@@ -570,11 +570,28 @@ body.dark-mode #slideshow_characters {
 }
 
 body.dark-mode .stats{
-    background-color: var(--color1);
+    background-color:rgba(255, 255, 255, 0.8);
+}
+
+body.dark-mode #hp-barra {
+    background-color: var(--color2);
+}
+
+body.dark-mode #atk-barra {
+    background-color: var(--color2);
+}
+
+body.dark-mode .hp_bar{
+    border-color: var(--color2);
+}
+
+body.dark-mode .atk_bar{
+    border-color: var(--color2);
 }
 
 body.dark-mode span{
-    color: var(--color2);
+    color: var(--color11);
+    font-weight: bold;
 }
 
 /*MEDIA QUERY*/
