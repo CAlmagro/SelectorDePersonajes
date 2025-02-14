@@ -5,7 +5,7 @@
 let buttonsC = document.querySelectorAll("#slideshow_characters div img");
 
 $(buttonsC).on('mouseover', function(){
-    $(this).css({"transform": "scale(1.2)", "box-shadow": "0px 0px 10px var(--color1)", "background-color": "var(--color9)", "border-color": "var(--color7)"});
+    $(this).css({"transform": "scale(1.2)", "box-shadow": "0px 0px 10px var(--color1)", "background-color": "var(--color9)", "border-color": "var(--color7)", "cursor": "pointer"});
 });
 
 $(buttonsC).on('mouseleave', function(){
@@ -16,7 +16,7 @@ $(buttonsC).on('mouseleave', function(){
 
 let buttonsM = document.querySelectorAll("#slideshow_maps div img");
 $(buttonsM).on('mouseover', function(){
-  $(this).css({"transform": "scale(1.1)", "box-shadow": "0px 0px 10px var(--color1)", "background-color": "var(--color9)", "border-color": "var(--color7)"});
+  $(this).css({"transform": "scale(1.1)", "box-shadow": "0px 0px 10px var(--color1)", "background-color": "var(--color9)", "border-color": "var(--color7)", "cursor": "pointer"});
 });
 
 $(buttonsM).on('mouseleave', function(){
@@ -35,7 +35,7 @@ let btnMenu = document.querySelectorAll(".menu-flex li a");
 // });
 
 $(btnMenu).on('mouseover', function(){
-  $(this).css({"background-color": "var(--color9)", "box-shadow": "0px 0px 10px var(--color1), -2px -5px 0 var(--color10), 2px 5px 0 var(--color7)", "transform": "scale(1.1)"});
+  $(this).css({"background-color": "var(--color9)", "box-shadow": "0px 0px 10px var(--color1), -2px -5px 0 var(--color10), 2px 5px 0 var(--color7)", "transform": "scale(1.1)", "cursor": "pointer"});
 });
 
 $(btnMenu).on('mouseleave', function(){
@@ -46,7 +46,7 @@ $(btnMenu).on('mouseleave', function(){
 let btnLogo = document.querySelectorAll("#logo a img");
 
 $(btnLogo).on('mouseover', function(){
-  $(this).css({"transform": "scale(1.3)"});
+  $(this).css({"transform": "scale(1.3)", "cursor": "pointer"});
 });
 
 $(btnLogo).on('mouseleave', function(){
