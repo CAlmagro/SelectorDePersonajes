@@ -505,6 +505,7 @@ span{
 
 #settings-icon:hover {
     color: var(--color9);
+    rotate:  360deg;
     transition: 0.6s;
 }
 

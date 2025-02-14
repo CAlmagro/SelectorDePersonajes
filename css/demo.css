@@ -140,6 +140,8 @@ src: url(../media/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
     border-style: inset;
     border-width: 5px;
     border-color: var(--color4);
+
+    transition: 0.33s;
   
 }
 

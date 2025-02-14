@@ -1,16 +1,37 @@
 
 
-//on hover
+//on hover personajes
 
-let buttons = document.querySelectorAll("#slideshow_characters div img");
+let buttonsC = document.querySelectorAll("#slideshow_characters div img");
 
-$(buttons).on('mouseover', function(){
-    $(this).css({"transform": "scale(1.4)", "box-shadow": "0px 0px 10px var(--color1)", "background-color": "var(--color9)", "border-color": "var(--color7)"});
+$(buttonsC).on('mouseover', function(){
+    $(this).css({"transform": "scale(1.2)", "box-shadow": "0px 0px 10px var(--color1)", "background-color": "var(--color9)", "border-color": "var(--color7)"});
 });
 
-$(buttons).on('mouseleave', function(){
+$(buttonsC).on('mouseleave', function(){
   $(this).css({"transform": "scale(1)", "box-shadow": "none", "background-color": "var(--color7)", "border-color": "var(--color4)"});
 });
+
+//on hover mapas
+
+let buttonsM = document.querySelectorAll("#slideshow_maps div img");
+$(buttonsM).on('mouseover', function(){
+  $(this).css({"transform": "scale(1.1)", "box-shadow": "0px 0px 10px var(--color1)", "background-color": "var(--color9)", "border-color": "var(--color7)"});
+});
+
+$(buttonsM).on('mouseleave', function(){
+$(this).css({"transform": "scale(1)", "box-shadow": "none", "background-color": "var(--color7)", "border-color": "var(--color4)"});
+});
+
+//on hover botón ajustes
+let sttingsBtn = document.getElementById("#settings-icon");
+$(sttingsBtn).on('mouseover', function(){
+  $(sttingsBtn).animate({rotate: '6000deg'}, slow);
+});
+
+
+
+
 
 // Selector de Personajes   
 let aglaeaImg = document.getElementById("aglea_chrc");
@@ -39,7 +60,11 @@ hpBarra.style.width = 60 + "%";
 atkBarra.style.width = 90 + "%";
 
 aglaeaImg.onclick = function(){
+  $(main_img).fadeOut(333, function(){
     main_img.src = "./media/imagenes/personajes splash art/Character_Aglaea_Splash_Art.webp";
+  });
+  $(main_img).fadeIn(333);
+   
     hpNum.innerText = '1242';
     hpBarra.style.width = 60 + "%";
     atkNum.innerText = '699';
@@ -47,7 +72,12 @@ aglaeaImg.onclick = function(){
 }
 
 gepardImg.onclick = function(){
-  main_img.src = "./media/imagenes/personajes splash art/Character_Gepard_Splash_Art.webp";
+
+  $(main_img).fadeOut(333, function(){
+    main_img.src = "./media/imagenes/personajes splash art/Character_Gepard_Splash_Art.webp";
+  });
+  $(main_img).fadeIn(333);
+ 
   hpNum.innerText = '1397';
   hpBarra.style.width = 90 + "%";
   atkNum.innerText = '543';
@@ -55,7 +85,10 @@ gepardImg.onclick = function(){
 }
 
 himekoImg.onclick = function(){
-  main_img.src = "./media/imagenes/personajes splash art/Character_Himeko_Splash_Art.webp";
+  $(main_img).fadeOut(333, function(){
+    main_img.src = "./media/imagenes/personajes splash art/Character_Himeko_Splash_Art.webp";
+  });
+  $(main_img).fadeIn(333);
   hpNum.innerText = '1048';
   hpBarra.style.width = 30 + "%";
   atkNum.innerText = '757';
@@ -63,7 +96,11 @@ himekoImg.onclick = function(){
 }
 
 jingYuanImg.onclick = function(){
-  main_img.src = "./media/imagenes/personajes splash art/Character_Jing_Yuan_Splash_Art.webp";
+  $(main_img).fadeOut(333, function(){
+    main_img.src = "./media/imagenes/personajes splash art/Character_Jing_Yuan_Splash_Art.webp";
+  });
+  $(main_img).fadeIn(333);
+  
   hpNum.innerText = '1164';
   hpBarra.style.width = 40 + "%";
   atkNum.innerText = '699';
@@ -71,7 +108,11 @@ jingYuanImg.onclick = function(){
 }
 
 robinImg.onclick = function(){
-  main_img.src = "./media/imagenes/personajes splash art/Character_Robin_Splash_Art.webp";
+  $(main_img).fadeOut(333, function(){
+    main_img.src = "./media/imagenes/personajes splash art/Character_Robin_Splash_Art.webp";
+  });
+  $(main_img).fadeIn(333);
+  
   hpNum.innerText = '1281';
   hpBarra.style.width = 50 + "%";
   atkNum.innerText = '640';
@@ -79,7 +120,11 @@ robinImg.onclick = function(){
 }
 
 theHertaImg.onclick = function(){
-  main_img.src = "./media/imagenes/personajes splash art/Character_The_Herta_Splash_Art.webp";
+  $(main_img).fadeOut(333, function(){
+    main_img.src = "./media/imagenes/personajes splash art/Character_The_Herta_Splash_Art.webp";
+  });
+  $(main_img).fadeIn(333);
+
   hpNum.innerText = '1164';
   hpBarra.style.width = 40 + "%";
   atkNum.innerText = '679';
@@ -87,7 +132,11 @@ theHertaImg.onclick = function(){
 }
 
 DanhengILImg.onclick = function(){
-  main_img.src = "./media/imagenes/personajes splash art/Character_DanhengIL_Splash_Art.webp";
+  $(main_img).fadeOut(333, function(){
+    main_img.src = "./media/imagenes/personajes splash art/Character_DanhengIL_Splash_Art.webp";
+  });
+  $(main_img).fadeIn(333);
+
   hpNum.innerText = '1242';
   hpBarra.style.width = 55 + "%";
   atkNum.innerText = '699';
@@ -95,7 +144,11 @@ DanhengILImg.onclick = function(){
 }
 
 SundayImg.onclick = function(){
-  main_img.src = "./media/imagenes/personajes splash art/Character_Sunday_Splash_Art.webp";
+  $(main_img).fadeOut(333, function(){
+    main_img.src = "./media/imagenes/personajes splash art/Character_Sunday_Splash_Art.webp";
+  });
+  $(main_img).fadeIn(333);
+
   hpNum.innerText = '1242';
   hpBarra.style.width = 55 + "%";
   atkNum.innerText = '640';
@@ -103,7 +156,11 @@ SundayImg.onclick = function(){
 }
 
 MydeiImg.onclick = function(){
-  main_img.src = "./media/imagenes/personajes splash art/Character_Mydei_Splash_Art.webp";
+  $(main_img).fadeOut(333, function(){
+    main_img.src = "./media/imagenes/personajes splash art/Character_Mydei_Splash_Art.webp";
+  });
+  $(main_img).fadeIn(333);
+
   hpNum.innerText = '1552';
   hpBarra.style.width = 100 + "%";
   atkNum.innerText = '427';
@@ -111,7 +168,11 @@ MydeiImg.onclick = function(){
 }
 
 KafkaImg.onclick = function(){
-  main_img.src = "./media/imagenes/personajes splash art/Character_Kafka_Splash_Art.webp";
+  $(main_img).fadeOut(333, function(){
+    main_img.src = "./media/imagenes/personajes splash art/Character_Kafka_Splash_Art.webp";
+  });
+  $(main_img).fadeIn(333);
+  
   hpNum.innerText = '1087';
   hpBarra.style.width = 20 + "%";
   atkNum.innerText = '679';
@@ -119,7 +180,11 @@ KafkaImg.onclick = function(){
 }
 
 ArgentiImg.onclick = function(){
-  main_img.src = "./media/imagenes/personajes splash art/Character_Argenti_Splash_Art.webp";
+  $(main_img).fadeOut(333, function(){
+    main_img.src = "./media/imagenes/personajes splash art/Character_Argenti_Splash_Art.webp";
+  });
+  $(main_img).fadeIn(333);
+
   hpNum.innerText = '1048';
   hpBarra.style.width = 25 + "%";
   atkNum.innerText = '737';
@@ -127,7 +192,11 @@ ArgentiImg.onclick = function(){
 }
 
 AcheronImg.onclick = function(){
-  main_img.src = "./media/imagenes/personajes splash art/Character_Acheron_Splash_Art.webp";
+  $(main_img).fadeOut(333, function(){
+    main_img.src = "./media/imagenes/personajes splash art/Character_Acheron_Splash_Art.webp";
+  });
+  $(main_img).fadeIn(333);
+  
   hpNum.innerText = '1125';
   hpBarra.style.width = 40 + "%";
   atkNum.innerText = '699';
@@ -135,7 +204,11 @@ AcheronImg.onclick = function(){
 }
 
 AventurineImg.onclick = function(){
-  main_img.src = "./media/imagenes/personajes splash art/Character_Aventurine_Splash_Art.webp";
+  $(main_img).fadeOut(333, function(){
+    main_img.src = "./media/imagenes/personajes splash art/Character_Aventurine_Splash_Art.webp";
+  });
+  $(main_img).fadeIn(333);
+
   hpNum.innerText = '1203';
   hpBarra.style.width = 50 + "%";
   atkNum.innerText = '446';
@@ -143,7 +216,11 @@ AventurineImg.onclick = function(){
 }
 
 DrRatioImg.onclick = function(){
-  main_img.src = "./media/imagenes/personajes splash art/Character_Dr.Ratio_Splash_Art.webp";
+  $(main_img).fadeOut(333, function(){
+    main_img.src = "./media/imagenes/personajes splash art/Character_Dr.Ratio_Splash_Art.webp";
+  });
+  $(main_img).fadeIn(333);
+
   hpNum.innerText = '1048';
   hpBarra.style.width = 25 + "%";
   atkNum.innerText = '776';
@@ -151,11 +228,71 @@ DrRatioImg.onclick = function(){
 }
 
 FireflyImg.onclick = function(){
-  main_img.src = "./media/imagenes/personajes splash art/Character_Firefly_Splash_Art.webp";
+  $(main_img).fadeOut(333, function(){
+    main_img.src = "./media/imagenes/personajes splash art/Character_Firefly_Splash_Art.webp";
+  });
+  $(main_img).fadeIn(333);
+
   hpNum.innerText = '815';
   hpBarra.style.width = 10 + "%";
   atkNum.innerText = '524';
   atkBarra.style.width = 30 + "%";
+}
+
+
+//Mapa selecionado
+let amphoreusImg = document.getElementById("amphoreus_maps");
+let spaceImg = document.getElementById("space_maps");
+let astralImg = document.getElementById("astral_maps");
+let jariloImg = document.getElementById("jarilo_maps");
+let penaconyImg = document.getElementById("penacony_maps");
+let xianzhouImg = document.getElementById("xianzhou_maps");
+
+amphoreusImg.onclick = function(){
+  $(main_map).fadeTo(333, 0.5, function(){
+    main_map.src = "./media/imagenes/mundos splash art/World_Amphoreus_Splash_Art.png";
+  });
+  $(main_map).fadeTo(222, 1);
+}
+
+astralImg.onclick = function(){
+  $(main_map).fadeTo(333, 0.4, function(){
+    main_map.src = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
+    
+  });
+  $(main_map).fadeTo(222, 1);
+}
+
+spaceImg.onclick = function(){
+  $(main_map).fadeTo(333, 0.4, function(){
+    main_map.src = "./media/imagenes/mundos splash art/World_Herta_Space_Station_Splash_Art.png";
+    
+  });
+  $(main_map).fadeTo(333, 1);
+}
+
+jariloImg.onclick = function(){
+  $(main_map).fadeTo(333, 0.4, function(){
+    main_map.src = "./media/imagenes/mundos splash art/World_Jarilo-VI_Splash_Art.png";
+    
+  });
+  $(main_map).fadeTo(333, 1);
+}
+
+penaconyImg.onclick = function(){
+  $(main_map).fadeTo(333, 0.4, function(){
+    main_map.src = "./media/imagenes/mundos splash art/World_Penacony_Splash_Art.png";
+    
+  });
+  $(main_map).fadeTo(333, 1);
+}
+
+xianzhouImg.onclick = function(){
+  $(main_map).fadeTo(333, 0.4, function(){
+    main_map.src = "./media/imagenes/mundos splash art/World_The_Xianzhou_Luofu_Splash_Art.png";
+    
+  });
+  $(main_map).fadeTo(333, 1);
 }
 
 // Selector de Mapas - Carrusel
@@ -195,37 +332,7 @@ FireflyImg.onclick = function(){
 // updateCarrusel();
 
 
-//Mapa selecionado
-let amphoreusImg = document.getElementById("amphoreus_maps");
-let spaceImg = document.getElementById("space_maps");
-let astralImg = document.getElementById("astral_maps");
-let jariloImg = document.getElementById("jarilo_maps");
-let penaconyImg = document.getElementById("penacony_maps");
-let xianzhouImg = document.getElementById("xianzhou_maps");
 
-amphoreusImg.onclick = function(){
-  main_map.src = "./media/imagenes/mundos splash art/World_Amphoreus_Splash_Art.png";
-}
-
-astralImg.onclick = function(){
-  main_map.src = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
-}
-
-spaceImg.onclick = function(){
-  main_map.src = "./media/imagenes/mundos splash art/World_Herta_Space_Station_Splash_Art.png";
-}
-
-jariloImg.onclick = function(){
-  main_map.src = "./media/imagenes/mundos splash art/World_Jarilo-VI_Splash_Art.png";
-}
-
-penaconyImg.onclick = function(){
-  main_map.src = "./media/imagenes/mundos splash art/World_Penacony_Splash_Art.png";
-}
-
-xianzhouImg.onclick = function(){
-  main_map.src = "./media/imagenes/mundos splash art/World_The_Xianzhou_Luofu_Splash_Art.png";
-}
 
 
 
