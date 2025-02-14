@@ -353,19 +353,15 @@ h1{
 }
 
 footer {
-    background-color: #2c023b; /* Igual que el fondo de la sección "About the Game" */
     color: var(--color1); /* Asegura que el texto sea legible */
     padding: 2rem;
-    text-align: center; /* Opcional: centra el contenido */
-}
-
-#footer {
-    background-color: #9c6ab5; /* Morado claro */
+    text-align: center; /* Opcional: centra el contenido */;
     color: white;
     padding: 2rem;
     text-align: center;
     font-family: Orbitron, sans-serif;
 }
+
 
 #footer h2 {
     font-size: 24px;
@@ -402,7 +398,7 @@ footer {
 }
 
 #about-the-game {
-    background-color: #2c023b; /* Morado oscuro */
+    
     padding: 3rem 2rem;
     color: var(--color1);
 }
