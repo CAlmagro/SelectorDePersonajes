@@ -26,13 +26,7 @@ $(this).css({"transform": "scale(1)", "box-shadow": "none", "background-color": 
 //on hover botones principal 
 let btnMenu = document.querySelectorAll(".menu-flex li a");
 
-// $(btnMenu).on('mouseover', function(){
-//   $(this).addClass("btnHover");
-// });
 
-// $(btnMenu).on('mouseleave', function(){
-//   $(this).removeClass("btnHover");
-// });
 
 $(btnMenu).on('mouseover', function(){
   $(this).css({"background-color": "var(--color9)", "box-shadow": "0px 0px 10px var(--color1), -2px -5px 0 var(--color10), 2px 5px 0 var(--color7)", "transform": "scale(1.1)", "cursor": "pointer"});
@@ -316,41 +310,7 @@ xianzhouImg.onclick = function(){
   $(main_map).fadeTo(333, 1);
 }
 
-// Selector de Mapas - Carrusel
 
-// let currentIndex = 0;
-// let mapsContainer = document.querySelector('#slideshow_maps');
-// let maps = document.querySelectorAll('#slideshow_maps div');
-// let totalMaps = maps.length;
-
-// // Función para actualizar el índice y desplazar el carrusel
-// function moveToIndex(index) {
-//     const width = maps[0].offsetWidth + 20; // Ancho de la imagen + el espacio entre ellas
-//     mapsContainer.scrollTo({
-//         left: index * width, 
-//         behavior: 'smooth' // Desplazamiento suave
-//     });
-// }
-
-// // Función para mostrar la imagen actual
-// function updateCarrusel() {
-//     moveToIndex(currentIndex);
-// }
-
-// // Función para cambiar a la imagen anterior
-// prevButton.addEventListener('click', () => {
-//     currentIndex = (currentIndex === 0) ? totalMaps - 1 : currentIndex - 1;
-//     updateCarrusel();
-// });
-
-// // Función para cambiar a la imagen siguiente
-// nextButton.addEventListener('click', () => {
-//     currentIndex = (currentIndex === totalMaps - 1) ? 0 : currentIndex + 1;
-//     updateCarrusel();
-// });
-
-// // Inicializar carrusel
-// updateCarrusel();
 
 
 

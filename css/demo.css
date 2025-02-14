@@ -40,14 +40,10 @@ src: url(../media/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
 }
 
 
-
-/* ----------------------- */
 .demo_main{
     display: flex;
     flex-direction: row;
     height: 100vh;
-    /* justify-content: space-between; */
-    /* align-items: center; */
 }
 
 #miAudio{
@@ -88,24 +84,6 @@ src: url(../media/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
 
 /* contenedor de las imagenes de personajes */
 #slideshow_characters{
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 5% 7%; */
-    /* margin-left:10%; */
-    /* padding: 10px 4px;
-    width: 75%;
-    height: 80%;
-
-    background-color: var(--color11);
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px var(--color5), 0px 0px 10px var(--color5), 0px 0px 10px var(--color5); */
-    /* border-style: solid;
-    border-width: 6px;
-    border-color: var(--color2);  */
-
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -162,16 +140,6 @@ src: url(../media/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
     transition: 0.33s;
 }
 
-/* #slideshow_characters img {
-    border-radius: 50%;
-    height: 9vh;
-    background-color: var(--color7);
-    border-style:inset;
-    border-width: 5px ;
-    border-color: var(--color4); 
-
-    transition: 0.33s;
-} */
 
 button {
     position: absolute;
@@ -214,17 +182,8 @@ button {
     justify-content: center;
 }
 
-/* #main_chrc{
-    padding: 5% 10%;
-    margin-right: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* position: absolute; */
-/* } */
 
 #main_img{
-    /* width: 50vw; */
     height: 75vh;
 }
 
@@ -292,14 +251,6 @@ button {
     transition: 0.33S;
 }
 
-/* #slideshow_maps {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory; 
-    scrollbar-width: thin; 
-    scrollbar-color: var(--color11) var(--color9); 
-    width: auto; 
-    max-width: 500px; 
-} */
 
 #slideshow_maps::-webkit-scrollbar, #slideshow_characters::-webkit-scrollbar {
     height: 8px; 
