@@ -501,12 +501,15 @@ span{
     font-size: 24px;
     cursor: pointer;
     color: var(--color1);
+    animation: rotation 60s 0s linear infinite ;
 }
 
 #settings-icon:hover {
     color: var(--color9);
     rotate:  360deg;
     transition: 0.6s;
+    /* animation: name duration  delay iteration-count direction fill-mode; */
+    animation: rotation2 2s ease-out infinite;
 }
 
 /* Estilos del menú de ajustes */
@@ -768,3 +771,24 @@ body.dark-mode span{
         font-size: var(--titleMovile);
     }
 }
+
+
+/* Animaciones */
+
+@keyframes rotation {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 6000deg;
+    }
+  }
+
+ @keyframes rotation2 {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+  }
