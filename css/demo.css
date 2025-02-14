@@ -47,6 +47,10 @@ src: url(../media/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
     /* align-items: center; */
 }
 
+#miAudio{
+    visibility: hidden;
+}
+
 /* coloca las secciones */
 #selector{
     display: flex;
@@ -54,6 +58,7 @@ src: url(../media/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
     justify-content: space-between;
     width: 50vw;
     height: 95vh;
+    margin-top: 10vh;
 }
 
 #selector #character, #selector #maps{
@@ -195,6 +200,7 @@ button {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    margin-top: 10vh;
 }
 
 .container{
