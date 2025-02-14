@@ -17,6 +17,8 @@
     --color7: #bddcfd;
     --color8: #4964dd;
     --color9: #d9adeb;
+    --color10: #ea62da;
+    --color11:#290e44;
 }
 
 /* Fuentes */
@@ -94,11 +96,12 @@ src: url(../media/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
     width: 75%;
     height: 80%;
 
-    background-color: var(--color3);
-    border-radius: 50px;
-    border-style: solid;
+    background-color: var(--color11);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px var(--color5), 0px 0px 10px var(--color5), 0px 0px 10px var(--color5);
+    /* border-style: solid;
     border-width: 6px;
-    border-color: var(--color6); 
+    border-color: var(--color2);  */
 }
 
 /* contenedor de las imagenes de mapas */
@@ -112,18 +115,16 @@ src: url(../media/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
     width: 75%;
     height: 80%;
 
-    background-color: var(--color3);
-    border-radius: 50px;
-    border-style: solid;
-    border-width: 6px;
-    border-color: var(--color6); 
+    background-color: var(--color11);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px var(--color5), 0px 0px 10px var(--color5), 0px 0px 10px var(--color5);
     overflow-x: auto; /* Permite el desplazamiento horizontal */
     gap: 20px; /* Espacio entre las imágenes */
     scroll-snap-type: x mandatory; /* Para hacer que el scroll se "detenga" en cada imagen */
     
 }
 
-.map {
+#slideshow_maps div{
     flex: 0 0 auto; /* Esto asegura que las imágenes no se estiren y tengan el tamaño adecuado */
     /* width: 125px; Puedes ajustar este tamaño según se necesite */
     height: 13vh; /* Mantener la altura */
@@ -222,11 +223,18 @@ button {
     align-items: center;
     margin-right: 10%;
     height: 20vh;
+
+    background-color: var(--color11);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px var(--color5), 0px 0px 10px var(--color5), 0px 0px 10px var(--color5);
+
 }
 
 .stats_bars{
     width: 100%;
     height: 20vh;
+    padding: 2vh;
+    margin-bottom: 4vh;
 }
 
 .stats span{
@@ -266,7 +274,7 @@ button {
     scrollbar-width: thin; 
     scrollbar-color: var(--color8) var(--color3); 
     width: auto; 
-    max-width: 600px; 
+    max-width: 500px; 
 }
 
 #slideshow_maps::-webkit-scrollbar {
@@ -277,7 +285,6 @@ button {
     background-color: var(--color3);
     border-radius: 10px;
 }
-
 
 #slideshow_maps::-webkit-scrollbar-thumb {
     background-color: var(--color8);

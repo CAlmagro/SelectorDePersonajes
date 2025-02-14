@@ -18,6 +18,7 @@
     --color8: #4964dd;
     --color9: #d9adeb;
     --color10: #ea62da;
+    --color11:#290e44;
 }
 
 /* Fuentes */
@@ -558,6 +559,18 @@ body.dark-mode #settings-menu {
 
 body.dark-mode #mute-checkbox, #dark-mode-toggle{
     accent-color: var(--color2);
+}
+
+body.dark-mode #slideshow_maps {
+    background-color: var(--color1);
+}
+
+body.dark-mode #slideshow_characters {
+    background-color: var(--color1);
+}
+
+body.dark-mode .stats{
+    background-color: var(--color1);
 }
 
 body.dark-mode span{

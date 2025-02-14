@@ -12,13 +12,6 @@ $(buttons).on('mouseleave', function(){
   $(this).css({"transform": "scale(1)", "box-shadow": "none", "background-color": "var(--color7)", "border-color": "var(--color4)"});
 });
 
-let astralImg = document.getElementById("astral_maps");
-
-$(document).ready(function(){
-  console.log(astralImg);
-  
-});
-
 // Selector de Personajes   
 let aglaeaImg = document.getElementById("aglea_chrc");
 let gepardImg = document.getElementById("gepard_chrc");
@@ -169,9 +162,9 @@ FireflyImg.onclick = function(){
 // Selector de Mapas  
 
 let currentIndex = 0;
-const mapsContainer = document.querySelector('#slideshow_maps');
-const maps = document.querySelectorAll('#slideshow_maps .map');
-const totalMaps = maps.length;
+let mapsContainer = document.querySelector('#slideshow_maps');
+let maps = document.querySelectorAll('#slideshow_maps div');
+let totalMaps = maps.length;
 
 // Función para actualizar el índice y desplazar el carrusel
 function moveToIndex(index) {
@@ -206,16 +199,26 @@ updateCarrusel();
 
 //Mapa selecionado
 
+let amphoreusImg = document.getElementById("amphoreus_maps");
 let spaceImg = document.getElementById("space_maps");
+let astralImg = document.getElementById("astral_maps");
 let jariloImg = document.getElementById("jarilo_maps");
 let penaconyImg = document.getElementById("penacony_maps");
 let xianzhouImg = document.getElementById("xianzhou_maps");
 
-$("#astral_maps").on("click", function(){
-  main_map.src = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
-  console.log("hola");
+amphoreusImg.onclick = function(){
+  main_img.src = "./media/imagenes/mundos splash art/World_Amphoreus_Splash_Art.png";
+}
+
+astralImg.onclick = function(){
+  main_img.src = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
+}
+
+// $("#astral_maps").on("click", function(){
+//   main_map.src = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
+//   console.log("hola");
   
-});
+// });
 
 
 
