@@ -118,7 +118,7 @@ src: url(../media/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
     background-color: var(--color11);
     border-radius: 20px;
     box-shadow: 0px 0px 10px var(--color5), 0px 0px 10px var(--color5), 0px 0px 10px var(--color5);
-    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    overflow-x: auto; /*Permite el desplazamiento horizontal*/
     gap: 20px; /* Espacio entre las imágenes */
     scroll-snap-type: x mandatory; /* Para hacer que el scroll se "detenga" en cada imagen */
     
@@ -128,7 +128,7 @@ src: url(../media/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
     flex: 0 0 auto; /* Esto asegura que las imágenes no se estiren y tengan el tamaño adecuado */
     /* width: 125px; Puedes ajustar este tamaño según se necesite */
     height: 13vh; /* Mantener la altura */
-    scroll-snap-align: center; /* Para que se enfoque en la imagen cuando se desplace */
+    scroll-snap-align: center; /*  Para que se enfoque en la imagen cuando se desplace */
 }
 
 #slideshow_maps img {
@@ -191,6 +191,7 @@ button {
     width: 60vw;
     height: 60vh;
     display: flex;
+    justify-content: center;
 }
 
 /* #main_chrc{
@@ -203,8 +204,8 @@ button {
 /* } */
 
 #main_img{
-    width: 50vw;
-    height: 80vh;
+    /* width: 50vw; */
+    height: 75vh;
 }
 
 #main_map{
@@ -271,8 +272,8 @@ button {
 #slideshow_maps {
     overflow-x: scroll;
     scroll-snap-type: x mandatory; 
-    scrollbar-width: thin; 
-    scrollbar-color: var(--color8) var(--color3); 
+    /* scrollbar-width: thin;  */
+    /* scrollbar-color: var(--color11) var(--color9);  */
     width: auto; 
     max-width: 500px; 
 }
@@ -282,18 +283,18 @@ button {
 }
 
 #slideshow_maps::-webkit-scrollbar-track {
-    background-color: var(--color3);
+    background-color: var(--color9);
     border-radius: 10px;
 }
 
 #slideshow_maps::-webkit-scrollbar-thumb {
-    background-color: var(--color8);
+    background-color: var(--color2);
     border-radius: 10px;
     min-width: 40px; 
 }
 
 #slideshow_maps::-webkit-scrollbar-thumb:hover {
-    background-color: var(--color2);
+    background-color: var(--color4);
 }
 
 /* On hover */

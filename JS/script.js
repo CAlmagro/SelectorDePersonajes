@@ -43,8 +43,7 @@ aglaeaImg.onclick = function(){
     hpNum.innerText = '1242';
     hpBarra.style.width = 60 + "%";
     atkNum.innerText = '699';
-    atkBarra.style.width = 90 + "%";
-    
+    atkBarra.style.width = 90 + "%";  
 }
 
 gepardImg.onclick = function(){
@@ -159,46 +158,44 @@ FireflyImg.onclick = function(){
   atkBarra.style.width = 30 + "%";
 }
 
-// Selector de Mapas  
+// Selector de Mapas - Carrusel
 
-let currentIndex = 0;
-let mapsContainer = document.querySelector('#slideshow_maps');
-let maps = document.querySelectorAll('#slideshow_maps div');
-let totalMaps = maps.length;
+// let currentIndex = 0;
+// let mapsContainer = document.querySelector('#slideshow_maps');
+// let maps = document.querySelectorAll('#slideshow_maps div');
+// let totalMaps = maps.length;
 
-// Función para actualizar el índice y desplazar el carrusel
-function moveToIndex(index) {
-    const width = maps[0].offsetWidth + 20; // Ancho de la imagen + el espacio entre ellas
-    mapsContainer.scrollTo({
-        left: index * width, 
-        behavior: 'smooth' // Desplazamiento suave
-    });
-}
+// // Función para actualizar el índice y desplazar el carrusel
+// function moveToIndex(index) {
+//     const width = maps[0].offsetWidth + 20; // Ancho de la imagen + el espacio entre ellas
+//     mapsContainer.scrollTo({
+//         left: index * width, 
+//         behavior: 'smooth' // Desplazamiento suave
+//     });
+// }
 
-// Función para mostrar la imagen actual
-function updateCarrusel() {
-    moveToIndex(currentIndex);
-}
+// // Función para mostrar la imagen actual
+// function updateCarrusel() {
+//     moveToIndex(currentIndex);
+// }
 
+// // Función para cambiar a la imagen anterior
+// prevButton.addEventListener('click', () => {
+//     currentIndex = (currentIndex === 0) ? totalMaps - 1 : currentIndex - 1;
+//     updateCarrusel();
+// });
 
-// Función para cambiar a la imagen anterior
-prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex === 0) ? totalMaps - 1 : currentIndex - 1;
-    updateCarrusel();
-});
+// // Función para cambiar a la imagen siguiente
+// nextButton.addEventListener('click', () => {
+//     currentIndex = (currentIndex === totalMaps - 1) ? 0 : currentIndex + 1;
+//     updateCarrusel();
+// });
 
-// Función para cambiar a la imagen siguiente
-nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex === totalMaps - 1) ? 0 : currentIndex + 1;
-    updateCarrusel();
-});
-
-// Inicializar carrusel
-updateCarrusel();
+// // Inicializar carrusel
+// updateCarrusel();
 
 
 //Mapa selecionado
-
 let amphoreusImg = document.getElementById("amphoreus_maps");
 let spaceImg = document.getElementById("space_maps");
 let astralImg = document.getElementById("astral_maps");
@@ -207,18 +204,30 @@ let penaconyImg = document.getElementById("penacony_maps");
 let xianzhouImg = document.getElementById("xianzhou_maps");
 
 amphoreusImg.onclick = function(){
-  main_img.src = "./media/imagenes/mundos splash art/World_Amphoreus_Splash_Art.png";
+  main_map.src = "./media/imagenes/mundos splash art/World_Amphoreus_Splash_Art.png";
 }
 
 astralImg.onclick = function(){
-  main_img.src = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
+  main_map.src = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
 }
 
-// $("#astral_maps").on("click", function(){
-//   main_map.src = "./media/imagenes/mundos splash art/World_Astral_Express_Splash_Art.png";
-//   console.log("hola");
-  
-// });
+spaceImg.onclick = function(){
+  main_map.src = "./media/imagenes/mundos splash art/World_Herta_Space_Station_Splash_Art.png";
+}
+
+jariloImg.onclick = function(){
+  main_map.src = "./media/imagenes/mundos splash art/World_Jarilo-VI_Splash_Art.png";
+}
+
+penaconyImg.onclick = function(){
+  main_map.src = "./media/imagenes/mundos splash art/World_Penacony_Splash_Art.png";
+}
+
+xianzhouImg.onclick = function(){
+  main_map.src = "./media/imagenes/mundos splash art/World_The_Xianzhou_Luofu_Splash_Art.png";
+}
+
+
 
 
 
