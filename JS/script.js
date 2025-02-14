@@ -9,7 +9,7 @@ $(buttonsC).on('mouseover', function(){
 });
 
 $(buttonsC).on('mouseleave', function(){
-  $(this).css({"transform": "scale(1)", "box-shadow": "none", "background-color": "var(--color7)", "border-color": "var(--color4)"});
+  $(this).css({"transform": "scale(1)", "box-shadow": "none", "background-color": "var(--color7)", "border-color": "var(--color9)"});
 });
 
 //on hover mapas
@@ -20,7 +20,7 @@ $(buttonsM).on('mouseover', function(){
 });
 
 $(buttonsM).on('mouseleave', function(){
-$(this).css({"transform": "scale(1)", "box-shadow": "none", "background-color": "var(--color7)", "border-color": "var(--color4)"});
+$(this).css({"transform": "scale(1)", "box-shadow": "none", "background-color": "var(--color7)", "border-color": "var(--color9)"});
 });
 
 //on hover botón ajustes
@@ -265,7 +265,7 @@ astralImg.onclick = function(){
 
 spaceImg.onclick = function(){
   $(main_map).fadeTo(333, 0.4, function(){
-    main_map.src = "./media/imagenes/mundos splash art/World_Herta_Space_Station_Splash_Art.png";
+    main_map.src = "./media/imagenes/mundos splash art/World_Herta_Space_Station_Splash_Art.jpg";
     
   });
   $(main_map).fadeTo(333, 1);
@@ -273,7 +273,7 @@ spaceImg.onclick = function(){
 
 jariloImg.onclick = function(){
   $(main_map).fadeTo(333, 0.4, function(){
-    main_map.src = "./media/imagenes/mundos splash art/World_Jarilo-VI_Splash_Art.png";
+    main_map.src = "./media/imagenes/mundos splash art/World_Jarilo-VI_Splash_Art.jpg";
     
   });
   $(main_map).fadeTo(333, 1);
@@ -289,7 +289,7 @@ penaconyImg.onclick = function(){
 
 xianzhouImg.onclick = function(){
   $(main_map).fadeTo(333, 0.4, function(){
-    main_map.src = "./media/imagenes/mundos splash art/World_The_Xianzhou_Luofu_Splash_Art.png";
+    main_map.src = "./media/imagenes/mundos splash art/World_The_Xianzhou_Luofu_Splash_Art.jpg";
     
   });
   $(main_map).fadeTo(333, 1);

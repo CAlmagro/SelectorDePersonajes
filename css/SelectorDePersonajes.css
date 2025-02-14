@@ -470,7 +470,8 @@ body{
     border-radius: 100px;
     box-shadow: -2px -5px 0 var(--color3);
     
-    font-size: 25px;
+    font-size: 20px;
+    padding: 8px;
     font-family: Orbitron;
     font-weight: bold;
     color: var(--color1);
