@@ -39,6 +39,38 @@ src: url(../media/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
     scroll-behavior: smooth;
 }
 
+/* ESTO ES PARTE DEL MAIN */
+
+.arrow, .arrow-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#2c023b ;
+    padding: 7vh 0;
+}
+
+.arrow-footer{
+    background-color:#9c6ab5 ;
+}
+
+.arrow img, .arrow-footer img{
+    width: 10%;
+}
+
+#formulario h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: "Orbitron";
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-container .about-video{
+    display: none;
+    visibility: hidden;
+}
+
+/* ----------------------- */
 .demo_main{
     display: flex;
     flex-direction: row;
