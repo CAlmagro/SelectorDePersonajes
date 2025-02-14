@@ -8,88 +8,76 @@
     <link rel="stylesheet" href="css/demo.css">
     <link rel="stylesheet" href="css/SelectorDePersonajes.css">
 </head>
+
 <body>
     <header>
         <div id="logo">
             <a href="index.html"><img src="media/imagenes/logo letras.png" alt=""></a>
-            
-    </div>
+        </div>
 
+        <!-- Icono de ajustes -->
+        <i id="settings-icon" class="fa-solid fa-gear"></i>
 
-   <!-- Icono de ajustes -->
-   <i id="settings-icon" class="fa-solid fa-gear"></i>
-
-   <!-- Menú de ajustes -->
-   <div id="settings-menu">
-       <label for="volume-slider">Volumen</label>
-       <input type="range" id="volume-slider" min="0" max="1" step="0.01">
+        <!-- Menú de ajustes -->
+        <div id="settings-menu">
+            <label for="volume-slider">Volumen</label>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01">
        
-       <div class="settings-item">
-           <label for="mute-checkbox">Mute</label>
-           <input type="checkbox" id="mute-checkbox">
-       </div>
+            <div class="settings-item">
+                <label for="mute-checkbox">Mute</label>
+                <input type="checkbox" id="mute-checkbox">
+            </div>
 
-       <div class="settings-item">
-           <label for="dark-mode-toggle">Modo Claro</label>
-           <input type="checkbox" id="dark-mode-toggle">
-       </div>
-   </div>
-</header>
+            <div class="settings-item">
+                <label for="dark-mode-toggle">Modo Claro</label>
+                <input type="checkbox" id="dark-mode-toggle">
+            </div>
+        </div>
 
-<main>
-   <audio id="miAudio" autoplay loop>
-       <source src="media/audios/Star Rail.mp3" type="audio/mpeg">
-       <source src="media/audios/Star Rail [TubeRipper.cc].ogg" type="audio/ogg">
-   </audio>
-</main>
-
-<script src="JS/settings.js"></script>
-</body>
-</html>
-
-    <nav id="menu">
+        <nav id="menu">
         
-        <input type="checkbox" id="menuToggle">      
+            <input type="checkbox" id="menuToggle">      
                 <ul class="menu-flex">
                     <audio id="miAudio" controls autoplay>
                         <source src="media/audios/Star Rail.mp3" type="audio/mpeg">
                         <source src="media/audios/Star Rail [TubeRipper.cc].ogg" type="audio/ogg">
                     </audio>
                 </ul>
-
-
-                <script>
-                    document.addEventListener('DOMContentLoaded', function() {
-                        var audio = document.getElementById('miAudio');
-                
-                        // Forzar la reproducción después de que el DOM esté cargado
-                        function reproducirAudio() {
-                            audio.play().then(() => {
-                                console.log('Audio reproduciéndose automáticamente.');
-                            }).catch((error) => {
-                                console.log('Autoplay bloqueado. Requiere interacción del usuario.');
-                            });
-                        }
-                
-                        // Intentar reproducir el audio al cargar la página
-                        reproducirAudio();
-                
-                        // En caso de bloqueo, intentar de nuevo al hacer clic en cualquier parte de la página
-                        document.body.addEventListener('click', function() {
-                            if (audio.paused) {
-                                reproducirAudio();
+    
+                    <!-- ¿SCRIPT AUDIO? -->
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            var audio = document.getElementById('miAudio');
+                    
+                            // Forzar la reproducción después de que el DOM esté cargado
+                            function reproducirAudio() {
+                                audio.play().then(() => {
+                                    console.log('Audio reproduciéndose automáticamente.');
+                                }).catch((error) => {
+                                    console.log('Autoplay bloqueado. Requiere interacción del usuario.');
+                                });
                             }
+                    
+                            // Intentar reproducir el audio al cargar la página
+                            reproducirAudio();
+                    
+                            // En caso de bloqueo, intentar de nuevo al hacer clic en cualquier parte de la página
+                            document.body.addEventListener('click', function() {
+                                if (audio.paused) {
+                                    reproducirAudio();
+                                }
+                            });
                         });
-                    });
-                </script>
-
-    </nav>
-    <div>
-        
-    </div>
+                    </script>
+        </nav>
     </header>
 
     <main class="demo_main">
+        <audio id="miAudio" autoplay loop>
+            <source src="media/audios/Star Rail.mp3" type="audio/mpeg">
+            <source src="media/audios/Star Rail [TubeRipper.cc].ogg" type="audio/ogg">
+        </audio>
+
         <section id="selector">
 
             <div id="character">
@@ -195,13 +183,7 @@
                     <div id="xianzhou_maps">
                         <img src="media/imagenes/mundos/World_The_Xianzhou_Luofu.webp" alt="Luofu ship star rail">
                     </div>
-    
-                     <!-- Fabicon arrows 
-                     <a class="prev"><i class="fa-solid fa-caret-left"></i></a>
-                     <a class="next"><i class="fa-solid fa-caret-right"></i></a> -->
-                </div>
-
-                
+                </div>              
             </div>
         </section>
 
@@ -232,11 +214,14 @@
                     </div>
                 </div>
             </div>
-        </section>   
+        </section>  
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script src="JS/settings.js"></script>
+
     <script src="JS/script.js"></script>
+    
 </body>
 </html>
